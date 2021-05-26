@@ -1,0 +1,262 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+function creditcard(cc, frmName){
+	frm = eval("document." + frmName);
+	var object_value = eval("frm." + cc + ".value");
+	var white_space = " -";
+	var creditcard_string="";
+	var check_char;
+ 	if (!numCheck(cc, 0, frmName))
+	  	return false;
+	  if (object_value < 1)
+      return false;
+	// squish out the white space
+	for (var i = 0; i < object_value.length; i++)
+	{
+		check_char = white_space.indexOf(object_value.charAt(i))
+		if (check_char < 0)
+			creditcard_string += object_value.substring(i, (i + 1));
+	}	
+	// if all white space return error
+    if (creditcard_string.length == 0)
+        return false;
+	// make sure number is a valid integer
+	if (creditcard_string.charAt(0) == "+")
+        return false;
+ // now check mod10
+	var doubledigit = creditcard_string.length % 2 == 1 ? false : true;
+	var checkdigit = 0;
+	var tempdigit;
+	for (var i = 0; i < creditcard_string.length; i++)
+	{
+		tempdigit = eval(creditcard_string.charAt(i))
+		if (doubledigit)
+		{
+			tempdigit *= 2;
+			checkdigit += (tempdigit % 10);
+			if ((tempdigit / 10) >= 1.0)
+			{
+				checkdigit++;
+			}
+			doubledigit = false;
+		}
+		else
+		{
+			checkdigit += tempdigit;
+			doubledigit = true;
+		}
+	}	
+	return (checkdigit % 10) == 0 ? true : false;
+    }
+
+
+
+// function to validate credit card date
+function checkccExp(txt1Obj, txt2Obj, now, frmName) {
+	frm = eval("document." + frmName);
+	if ( (nullCheck(txt1Obj, frmName)) && (nullCheck(txt2Obj, frmName)) ) {
+		var val1 = eval("frm." + txt1Obj + ".value");
+		var val2 = eval("frm." + txt2Obj + ".value");
+  exp = ("" + val2 + "" + val1 + "");
+		if  (exp > now) 
+			return true;
+		else
+			return false;	
+	}
+	else
+		return false;
+}
+
+
+
+
+// function to check if any one of the radio options is chosen
+function radCheck(radObj, frmName) {
+	var bFlag = false;
+	frm = eval("document." + frmName);
+	len = eval("frm." + radObj + ".length");
+	for (i=0; i<len; i++)
+		if (eval("frm." + radObj + "[" + i + "].checked") == true) 
+			bFlag = true;
+	if (bFlag == true) 
+		return true;
+	else
+		return false;
+}
+
+
+
+
+// this function checks for zero or spaces as entry
+function numCheck(txtObj, bCanBeNegative, frmName) {
+	var nums = "0123456789.";
+	if (bCanBeNegative == true) {
+		nums += "-"
+	}
+	frm = eval("document." + frmName);
+	var chkVal = eval("frm." + txtObj + ".value");
+	if (chkVal == "") 
+		return false;
+	for (var i=0; i<chkVal.length; i++) {
+		val = chkVal.substring(i, i+1);
+		if ( (nums.indexOf(val) < 0) || (val == " ") )
+			return false;
+	}
+		return true;
+}
+
+
+
+
+
+// this function changes the value to 0 if none is selected in the combo box
+function applyZero(cmbObj, txtObj, frmName) {
+	frm = eval("document." + frmName);
+	selIndex = eval("frm." + cmbObj + ".options.selectedIndex");
+	if (selIndex == 0) 
+		eval("frm." + txtObj + ".value = 0");
+}
+
+
+
+
+
+function checkBetwnPair(txt1Obj, txt2Obj, val, frmName) {
+	frm = eval("document." + frmName);
+	if ( (numCheck(txt1Obj, false, frmName)) && (numCheck(txt2Obj, false, frmName)) ) {
+		val1 = parseFloat(eval("frm." + txt1Obj + ".value"));
+		val2 = parseFloat(eval("frm." + txt2Obj + ".value"));
+		if ( (reportNum(txt1Obj, "gte" + val, frmName)) && (val2 >= val1) )		
+			return true;
+		else
+			return false;	
+	}
+	else
+		return false;
+}
+
+
+
+
+function reportNum(txtObj, verb, frmName) {
+	frm = eval("document." + frmName);
+	// gte
+	if (verb.indexOf("gte") != -1) {
+		chkVal = parseFloat(verb.substring(verb.indexOf("gte") + 3, verb.length));
+		if (parseFloat(eval("frm." + txtObj + ".value")) >= chkVal)
+			return true;
+		else
+			return false;	
+	}
+	// grt
+	if (verb.indexOf("grt") != -1) {
+		chkVal = parseFloat(verb.substring(verb.indexOf("grt") + 3, verb.length));
+		if (parseFloat(eval("frm." + txtObj + ".value")) > chkVal)
+			return true;
+		else
+			return false;	
+	}
+	// lte
+	if (verb.indexOf("lte") != -1) {
+		chkVal = parseFloat(verb.substring(verb.indexOf("lte") + 3, verb.length));
+		if (parseFloat(eval("frm." + txtObj + ".value")) <= chkVal)
+			return true;
+		else
+			return false;	
+	}
+	// lst
+	if (verb.indexOf("lst") != -1) {
+		chkVal = parseFloat(verb.substring(verb.indexOf("lst") + 3, verb.length));
+		if (parseFloat(eval("frm." + txtObj + ".value")) < chkVal)
+			return true;
+		else
+			return false;	
+	}
+}
+
+// this function checks for null or spaces as entry
+function nullCheck(txtObj, frmName) {
+	frm = eval("document." + frmName);
+	var chkVal = eval("frm." + txtObj + ".value");
+	if (chkVal == "") 
+		return false;
+	for (var i=0; i<chkVal.length; i++) {
+		val = chkVal.substring(i, i+1);
+		if (val == " ")
+			return false;
+	}
+		return true;
+}
+
+function alphaCheck(txtObj, frmName) {
+	var nums = "+0123456789.~`!@#\"$%^&*()|\[]{}:;'<>?/,";
+	frm = eval("document." + frmName);
+	var chkVal = eval("frm." + txtObj + ".value");
+	if (chkVal == "") 
+		return false;
+	for (var i=0; i<chkVal.length; i++) {
+		val = chkVal.substring(i, i+1);
+		if (nums.indexOf(val) >= 0)
+			return false;
+	}
+		return true;
+}
+
+
+function alphaNumCheck(txtObj, frmName) {
+	var nums = ".~`!@#$%^&*()|\[]\"{}:;<>?/,";
+	frm = eval("document." + frmName);
+	var chkVal = eval("frm." + txtObj + ".value");
+	if (chkVal == "") 
+		return false;
+	for (var i=0; i<chkVal.length; i++) {
+		val = chkVal.substring(i, i+1);
+		if (nums.indexOf(val) >= 0)
+     return false;
+	}
+		return true;
+}
+
+
+
+function emailCheck(txtObj, frmName) {
+	frm = eval("document." + frmName);
+	emailid = eval("frm." + txtObj + ".value");
+	if ( (emailid.indexOf("@") < 0) || (emailid.indexOf(".") < 0) )
+		return false;
+	else
+	return true;
+}
+
+}
+/*
+     FILE ARCHIVED ON 14:57:37 May 21, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:14 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 0.976
+  exclusion.robots: 0.236
+  exclusion.robots.policy: 0.215
+  CDXLines.iter: 31.164 (3)
+  load_resource: 52.715
+  LoadShardBlock: 114.042 (3)
+  esindex: 0.016
+  captures_list: 166.201
+  PetaboxLoader3.datanode: 121.53 (4)
+  PetaboxLoader3.resolve: 28.717
+*/

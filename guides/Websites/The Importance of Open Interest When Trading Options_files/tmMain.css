@@ -1,0 +1,1689 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapAll {
+	width:987px;
+}
+
+.centerContent {
+ 		display:inline;
+		float:left;
+		margin-left:15px;
+		width:455px;
+		margin-right:7px;
+		*margin-right:15px;
+		margin-top:0px;
+}
+
+.centerContentHP {
+ 		display:inline;
+		float:left;
+		margin-left:15px;
+		width:455px;
+		margin-right:7px;
+		*margin-right:17px;
+		margin-top:0px;
+}
+
+
+.centerContentB {
+ 		display:inline;
+		float:left;
+		margin-left:15px;
+		width:597px;
+		*width:593px;
+		margin-right:7px;
+		*margin-right:21px;
+		margin-top:0px;
+}
+
+.centerContentBNews {
+ 		display:inline;
+		float:left;
+		margin-left:15px;
+		width:585px;
+		*width:595px;
+		margin-right:10px;
+		*margin-right:21px;
+		margin-top:0px;
+}
+
+
+.centerContentC {
+ 		display:inline;
+		float:left;
+		margin-left:15px;
+		width:765px;
+		margin-right:7px;
+		margin-top:0px;
+}
+
+.rightMenu {
+		display:inline;
+		float:left;
+		margin-left:14px;
+		*margin-left:-3px;
+		width:300px;
+		margin-top:0px;
+}
+
+.rightMenuHP {
+		display:inline;
+		float:left;
+		margin-left:14px;
+		*margin-left:3px;
+		width:300px;
+		margin-top:0px;
+}
+
+.rightMenuB {
+		display:inline;
+		float:left;
+		margin-left:11px;
+		*margin-left:0px;
+		width:160px;
+		margin-top:25px;
+}
+
+.PopBoxImageSmall
+{
+	border: none 0px #ffffff;
+	cursor: url("https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/images/magplus.cur"), pointer;
+}
+.PopBoxImageLarge
+{
+	border: solid 1px #999999;
+	cursor: url("https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/images/magminus.cur"), pointer;
+}
+.PopBoxImageShrink
+{
+	cursor: url("https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/images/magminus.cur"), pointer;
+}
+.PopBoxImageLink
+{
+	cursor: pointer;
+}
+.PopBoxImageMove
+{
+	border: none 0px #ffffff;
+	cursor: pointer;
+}
+
+body,th,td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin:0px;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:link {
+	text-decoration:none;
+	color:#013b8f;
+}
+
+a:visited {
+	text-decoration:none;
+	color:#013b8f;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:active {
+	text-decoration:none;
+	color:#013b8f;
+}
+
+form {
+	margin:0px;
+}
+
+img {
+	border:none;
+}
+
+h1 {
+	line-height: 26px; 
+	font-size: 26px; 
+	color: #363636;
+	line-height:30px;
+	margin-bottom:2px;
+	margin-top:0px;
+}
+
+h3 {
+	font-size: 26px;
+	text-decoration: none;
+	color:#013B8F; 
+	font-weight:bold;
+	margin:0px;
+}
+
+h3 a:link {
+	font-size: 26px;
+	text-decoration: none;
+	color:#013B8F; 
+	font-weight:bold;
+	margin:0px;
+}
+	
+h3 a:hover {
+	font-size: 26px;
+	text-decoration: underline;
+	color:#013B8F;
+}
+
+.stockSym {
+	color:#013B8F;
+	font-size:18px;
+}
+
+a.stockSym:link {
+	text-decoration:none;
+}
+
+a.stockSym:link {
+	text-decoration:underline;
+}
+
+.sectTitleStocks{
+	color:#2e9726;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.mastContainer {
+	width:986px;
+	padding-top:3px;
+	margin-bottom:10px;
+}
+
+.mastBanner {
+	display:inline;
+	margin-left:50px;
+}
+
+.tmLogo {
+	display:inline;
+}
+
+.mastBlueMenuBox {
+	height:61px;
+	width:986px;
+	background-color:#e7ebef;
+	margin-top:3px;
+}
+
+.freeTrial {
+	color:#FF0000;
+	font-size:10px;
+	margin-left:5px;
+	width:430px;
+}
+
+.mastAdWrap {
+	float:left;
+	text-align:left;
+}
+
+.mastAdTxt {
+	font-size:12px;
+	margin-left:5px;
+	width:430px;
+	display:inline;
+}
+
+.mastAdTxt a {
+	color:#0000CC; 
+	text-decoration:underline;
+}
+
+.mastFormWrap {
+	float:right;
+	display:inline;
+	width:475px;
+	height:10px;
+	text-align:right;
+	margin-top:7px;
+	margin-right:2px;
+
+}
+
+.mastForm {
+	width:475px;
+	text-align:right;
+	margin:0px;
+	display:inline;
+}
+
+.mastEl {
+	margin-bottom:3px;
+	*margin-bottom:2px;
+}
+
+.mastEl2 {
+	margin-left:12px;
+	margin-left:*8px;
+	margin-right:5px;
+}
+
+.leftMenu {
+	display:inline;
+	float:left;
+	width:191px;
+	background-color:#eff6f7;
+	margin-left:0px;
+	mergin-bottom:5px;
+	*margin-bottom:15px;
+}
+
+.leftMenuWrap {
+	width:191px;
+	margin-left:4px;
+	float:left;
+}
+
+.lMenuQuoteForm {
+	width:188px;
+	*width:190px;
+	background-color:#ffffff;
+	border:1px solid #C0C0C0;
+}
+
+.lMenuSym {
+	margin-top:6px;
+}
+
+.lMenuGo {
+	margin-bottom:6px;
+	margin-left:5px;
+	display:inline;
+}
+
+.lMenuAd {
+	margin:10px;
+        text-align:center;
+}
+
+
+.lMenuHeadStocks {
+	font-size:18px;
+	font-weight:bold;
+	color:#2e9726;
+	margin:10px;
+	margin-bottom:0px;
+}
+
+.lMenuSubHead {
+	font-size:13px;
+	font-weight:bold;
+	color:#000000;
+	margin-left:10px;
+	margin-top:18px;
+
+}
+
+.lMenuLink {
+	color:#013b8f;
+}
+
+.lMenuLinkStocks a:hover {
+	color:#3a3a3a;
+}
+
+.adTextUnd {
+	margin-bottom:15px;
+}
+
+.adtextund a:link {text-decoration:underline ! important;}
+.adtextund a {text-decoration:underline ! important;}
+a.adtextund:link {text-decoration:underline ! important;}
+a.adtextund:visible {text-decoration:underline ! important;}
+a.adtextund:hover {text-decoration:underline ! important;}
+
+.contentContainer {
+	width:455px;
+	margin-right:7px;
+	margin-left:3px;
+	margin-top:0px;
+}
+
+.sectionLabelStocks {
+	color:#2e9726;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.sectionLabelGeneric {
+	color:#013B8F; 
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.sectionLabelOptions {
+	color:#cb6c00;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.premiumServOptions {
+	background-color:#cb6c00;
+	padding:1px;
+	*padding-bottom:5px;
+}
+
+.lMenuHeadOptions {
+	font-size:18px;
+	font-weight:bold;
+	color:#cb6c00;
+	margin:10px;
+	margin-bottom:0px;
+}
+
+.lMenuHead {
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+	margin:10px;
+	margin-bottom:0px;
+}
+
+
+.sectionLabelForex {
+	color:#016469;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.premiumServForex {
+	background-color:#016469;
+	padding:1px;
+	*padding-bottom:5px;
+}
+
+.lMenuHeadForex {
+	font-size:18px;
+	font-weight:bold;
+	color:#016469;
+	margin:10px;
+	margin-bottom:0px;
+}
+
+.sectionLabelEminis {
+	color:#7c001a;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 16px;
+}
+
+.premiumServEminis {
+	background-color:#7c001a;
+	padding:1px;
+	*padding-bottom:5px;
+}
+
+.lMenuHeadEminis {
+	font-size:18px;
+	font-weight:bold;
+	color:#7c001a;
+	margin:10px;
+	margin-bottom:0px;
+}
+
+.authorImage {
+	margin-top:5px; 
+	margin-right:5px;
+	float:left;
+	clear:left;
+}
+
+.subheadlineT {
+	font-size:16px;
+}
+
+.subheadlineB {
+	font-size:16px;
+	color: #1748AD;
+}
+
+.authorName {
+	color:#898989;
+	font-size:10px;
+	margin-top:1px;
+	margin-bottom:7px;
+}
+
+.authorNameB {
+	color:#898989;
+	font-size:10px;
+	margin-top:1px;
+}
+
+
+.authorNameNews {
+	color:#707070;
+	font-size:11px;
+	margin-top:-1px;
+	margin-bottom:-15px;
+}
+
+.contentText {
+	display:inline;
+	color:#545454;
+	font-size:12px;
+}
+
+a.readMore {
+	text-decoration:underline; 
+	color:0179ff; 
+	font-size:11px;
+	display:inline;
+}
+
+a.readMore:hover {
+	text-decoration:underline; 
+	color:0179ff; 
+	font-size:11px;
+	display:inline;
+}
+
+a.readMore:visited {
+	text-decoration:underline; 
+	color:0179ff; 
+	font-size:11px;
+	display:inline;
+}
+
+.moreGts {
+	font-size:9px;
+}
+
+.latestIdeas {
+	color:#545454;
+	font-weight:bold;
+	margin-top:12px;
+	margin-bottom:6px;
+	text-align:left;
+}
+
+.latestHead {
+	color:#1748AD;
+}
+
+.latestPanel {
+	width:235px;
+	float:left;
+}
+
+.authorNameLatest {
+	color:#898989;
+	font-size:10px;
+	margin-top:4px;
+
+}
+
+.premServWrap {
+	float:right;
+	margin-top:-28px;
+	width:212px;
+}
+
+.premiumServices {
+	background-color:#2e9726;
+	padding:1px;
+	*padding-bottom:5px;
+}
+
+.premServLabel {
+	font-size: 11px; 
+	color:#FFFFFF;
+	font-weight:bold;
+	margin:6px;
+	margin-bottom:2px;
+}
+
+.premServInside {
+	margin:4px;
+	margin-top:0px;
+	background-color:#FFFFFF;
+	padding:10px;
+}
+
+.premServHead {
+	font-family:Palatino Linotype;
+	line-height:19px ; 
+	font-size: 12pt; 
+	font-weight:bold;
+	color:#1748ad;
+	margin-bottom:6px;
+}
+
+.premServHead a {
+	text-decoration:none;
+}
+
+.premServAd {
+	text-align:right;
+	color:#545454;
+	font-size:10px;
+	margin:4px;
+	margin-right:6px;
+}
+
+.yellowBoxAd {
+	width:455px;
+	height:25px;
+	border:1px solid #C0C0C0;
+	background-color:#FFE983;
+	margin-top:25px;
+	margin-bottom:25px;
+	padding-top:3px; text-align:center;
+}	
+
+.ftcAd  {
+	border:1px solid #C0C0C0;
+	float:right;
+	width:191px;
+	margin-top:-25px;
+}
+
+.ftcAdHP  {
+	border:1px solid #C0C0C0;
+	width:191px;
+}
+
+
+.ftcTxt1 {
+	font-size:11px; 
+	line-height:14px; 
+	color:545454;
+	margin:5px;
+	margin-top:15px;	
+}
+
+.ftcTxt2 {
+	font-size:11px; 
+	line-height:16px; 
+	color:545454;
+	margin:6px;
+	margin-top:10px;	
+}
+
+.ftcButton {
+	margin-left:16px;
+	margin-top:11px;
+
+}
+
+.ftcButton a {
+	text-decoration:underline;
+}
+
+.linklist{
+	font-size:8pt;
+	font-weight: bold;
+	line-height: 2;
+	color:1748ad;
+	font-style: italic;
+	display:inline;
+	white-space:nowrap;
+}
+
+.linklist a:link {
+	font-size:8pt;
+	font-weight: bold;
+	line-height: 2;
+	color:1748ad;
+	font-style: italic;
+	text-decoration:underline;
+}
+
+.lsbcSec {
+	width:30%;
+	float:left;
+	margin:5px;
+}
+
+.lessStratByCat {
+	width:455px;
+	margin-left:8px;
+}
+
+.rMenuPRText {
+	font-size: 10px; 
+	color: #999999;
+	display:inline;
+	width:100px;
+	height:28px;
+	vertical-align:top;
+	line-height:9px; 
+	float:right;
+}
+
+
+.prst_panel {
+	display:block;
+	border:1px solid #c0c0c0;
+	margin-top:-6px;
+	padding:3px;
+	margin-bottom:25px;
+}
+
+.prBoxColAHd {
+ 	background-color:#efefef;
+	margin-right:3px;
+	float:left;
+	width:62%;
+	*width:65%;
+	padding-left:3px;
+	color:#7e7e7e;
+	font-size:11px;
+	margin-top:4px;
+	height:16px;
+	margin-left:2px;
+}
+
+.prBoxColBHd {
+	background-color:#efefef;
+	margin-right:3px;
+	float:left;
+	width:59px;
+	padding-left:3px;
+	color:#7e7e7e;
+	font-size:11px;
+	margin-top:4px;
+	height:16px;
+}
+
+.prBoxColCHd {
+	background-color:#efefef;
+	float:left;
+	width:25px;
+	padding-left:3px;
+	color:#7e7e7e;
+	font-size:11px;
+	margin-top:4px;
+	height:16px;
+	
+}
+
+.clearBoth {
+	clear:both;
+}
+
+.prBoxColA {
+	margin-right:0px;
+	*margin-right:4px;
+	float:left;
+	width:62%;
+	padding:3px;
+	color:#013B8F;
+	text-decoration:none;
+	font-size:11px;
+	margin-bottom:10px;
+	margin-left:2px;
+}
+
+.prBoxColA a:hover{
+
+	text-decoration:underline;
+}
+
+.prBoxColB {
+	margin-right:-1px;
+	*margin-right:3px;
+	float:left;
+	width:59px;
+	padding:3px;
+	text-align:center;
+	font-size:11px;
+	margin-bottom:10px;
+}
+
+.prBoxColC {
+	float:left;
+	width:25px;
+	padding:3px;
+	font-weight:bold;
+	text-align:center;
+	font-size:11px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+a.prBoxMore {
+	text-decoration:none; 
+	color:#0179ff; 
+	font-size:12px;
+	margin-top:10px;
+}
+
+a.prBoxMore:link {
+	text-decoration:none; 
+	color:#0179ff; 
+	font-size:12px;
+	margin-top:10px;
+}
+
+a.prBoxMore:hover {
+	text-decoration:underline; 
+	color:#0179ff; 
+	font-size:12px;
+	margin-top:10px;
+}
+
+.prBoxForm {
+	padding:1px;
+}
+
+.prlt_panel {
+	display:none;
+	border:1px solid #c0c0c0;
+	margin-top:-6px;
+	padding:3px;
+	margin-bottom:25px;
+}
+
+.prBoxElement {
+background-color:#FFE983; 
+margin-bottom:6px;
+}
+
+.panel {
+	border:1px solid #c0c0c0;
+	margin-top:0px;
+	*margin-top:-4px;
+	padding:4px;
+	
+}
+
+.rmContestHead {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.rmPRRadio {
+	font-size:10px;
+}
+
+.rmList {
+	color:#013b8f;
+}
+
+.rmList ul {
+	list-style-image: url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/layout/2xGtSign.gif);
+	list-style-type:none;
+	margin-left:-10px;
+	*margin-left:25px;
+}
+
+.rmList br {
+	line-height:7px;
+}
+
+.adSpace {
+	margin-bottom:15px;
+}
+
+.mostPopMore {
+	margin-left:40px;
+	margin-bottom:10px;
+}
+
+.aolFeed {
+	border:1px solid #d6e8ea;
+	width:300px;
+}
+
+.aolFeedHead {
+	padding:5px;
+	font-weight:bold;
+	color:#0e0e86;
+	background-color:#d6e8ea;
+	font-size:13px;
+	width:290px;
+	*width:298px;
+}
+
+.aolFeedFoot {
+	padding:5px;
+	font-weight:bold;
+	color:#0e0e86;
+	background-color:#eef6f8;
+	font-size:13px;
+	width:290px;
+	*width:298px;
+}
+
+.aolFeedRSS {
+	display:inline;
+	margin-left:40px;
+}
+
+.rmFreeNL {
+	border:1px solid #c0c0c0;
+	margin-top:25px;
+	margin-bottom:25px;
+	padding:8px;	
+}
+
+.rmFreeNL br {
+	line-height:7px;
+}
+
+.tmDirectory {
+	border:1px solid #c0c0c0;
+	width:989px;
+	background-color:#f2f2f2;
+	font-size:11px;
+	height:350px;
+	padding-top:12px;
+}
+
+.tmDirectory br {
+	line-height:7px;
+}
+
+.tmDirectory ul {
+	list-style-type:none;
+	line-height:18px;
+	margin-left:-40px;
+	*margin-left:1px;
+	white-space:nowrap;
+	margin-top:4px;
+}
+
+
+.tmDirBoxA {
+	width:160px;
+	height:20px;
+	background-color:#dfdfdf;
+	font-weight:bold;
+	padding-top:4px;
+	padding-left:4px;
+	color:#1748ad;
+}
+
+.tmDirBoxB {
+	width:280px;
+	height:20px;
+	background-color:#dfdfdf;
+	font-weight:bold;
+	padding-top:4px;
+	padding-left:4px;
+	color:#1748ad;
+}
+
+.tmDirSecWrap {
+	float:left;
+	margin:5px;
+	width:160px
+}
+
+.tmDirFTLeft {
+	float:left;
+	width:220px;
+}
+
+.tmDirFTRight {
+	float:right;
+	width:60px;
+}
+
+.tmDirFTWrap {
+	width:280px;
+}
+
+.tmDirHead {
+	margin-left:450px;
+	color:#545454;
+}
+
+.relatedSites {
+	text-align:center; 
+	width:989px;
+}
+
+.relSiteSection {
+	margin:10px;
+	display:inline;
+}
+
+.relSitesHead {
+	margin-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+	width:inherit;
+}
+
+.ftrBottom {
+	width:989px;
+}
+
+.lmEminBox {
+	border:1px solid #999999;
+	padding:5px;
+	padding-left:10px;
+	margin-left:2px;
+	background-color:#FFFFFF;
+	width:172px;
+	*width:190px;
+}
+
+.lmEminBox ul {
+	list-style-type:none;
+	margin:0px;
+}
+
+.lmEminBox li {
+	margin-left:-20px;
+	*margin-left:20px;
+}
+
+.eminisMostPopMenuHead {
+	font:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#7c001a;
+}
+
+.prLookupBox {
+	background-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/powerrating/new_ban/powerratings_bbg.gif);
+	height:148px;
+	border:1px solid #B5B5B5;
+	margin-bottom:15px;
+}
+
+.prLookupInA {
+ 	background-color:#36bb2c;
+	width:250px;
+	height:34px;
+	*height:38px;
+	margin-top:94px;
+	margin-left:22px;
+	padding-top:6px;
+
+}
+
+
+.prLookupInB {
+ 	background-color:#36bb2c;
+	width:250px;
+	height:45px;
+	margin-top:88px;
+	margin-left:22px;
+	padding-top:8px;
+	
+
+}
+
+.prLUTxtA {
+	font-size:14px; 
+	font-weight:bold;
+	width:150px;
+	margin-left:14px;
+	*margin-left:-5px;
+	margin-bottom:10px;
+	*margin-bottom:6px;
+}
+
+.prLUTxtB {
+	font-size:22px;
+	width:150px;
+	margin-left:12px;
+	*margin-left:-7px;
+	margin-bottom:11px;
+	*margin-bottom:8px;
+
+}
+
+.prLUGoButton {
+	margin-bottom:8px;
+	margin-left:4px;
+	display:inline-block;
+}
+
+.prLUGoButtonB {
+	margin-bottom:6px;
+	margin-left:8px;
+	display:inline-block;
+}
+
+.upComEvents {
+	background-color:#e2edff;
+	padding:1px;
+	*padding-bottom:5px;
+	width:296px;
+	*width:300px;
+	border:1px solid #93a6d1;
+}
+
+.upComEventsInside {
+	margin:4px;
+	margin-top:0px;
+	background-color:#FFFFFF;
+	padding:4px;
+	border:1px solid #93a6d1;
+}
+
+.upComEvTxt {
+	font-size:11px; 
+	color:#545454;
+	padding-left:6px;
+}
+
+.upComEvRed {
+ 	color:#990000;
+}
+
+.upComEvInBox {
+	padding-right:5px; 
+	font-size:11px; 
+	color:##000000; 
+	font-weight:bold; 
+	margin-top:1px; 
+	margin-bottom:6px;
+}
+
+.upComEvDate {
+	padding-left:6px; 
+	padding-top:2px;
+}
+
+.upComEvHead {
+	padding-left:6px;
+}
+
+.upComEvHead a {
+	color:##1748ad; 
+	font-weight:bold; 
+	text-decoration:underline;
+}
+
+.hpBlueBox {
+	background-color: #013b8f;
+	color:#ffffff;
+	height:28px;
+	text-align:center;
+	font-weight:bold;
+	padding-top:7px;
+	margin-top:15px;
+	font-size:16px;
+}
+
+.blueBoxTime {
+	font-size:11px; 
+	font-weight:bold;
+	color:#666666;
+	float:left;
+	width:30px;
+}
+
+.blueBoxHeadline {
+	text-decoration:none;
+	font-size:12px;
+	width:400px;
+	float:right;
+	text-align:left;
+	margin-bottom:7px;
+}
+
+.blueBoxLine {
+	margin:1px;
+}
+
+.whatsOnTM {
+	border:#c0c0c0 solid 1px;
+	padding:10px;
+}
+
+.whatsOnTMHead {
+	color:#013b8f;
+	font-weight:bold;
+}
+
+.whatsOnTMBody {
+	color:#545454;
+
+}
+
+.asSeenOn {
+	margin:5px; 
+	margin-top:8px; 
+	margin-left:8px;
+	padding:5px;
+	border:#c0c0c0 solid 1px;
+}
+
+.asSeenOnHead {
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:10px;
+	
+}
+
+.asSeenOnRed {
+	color:#A60800;
+}
+
+.asSeenOnTxt {
+	line-height:16px; 
+	font-size: 11px; 
+	color: #666666;
+}
+
+.todaysFreeReport {
+	width:212px; 
+	margin-top:10px;
+}
+
+.todaysFRTxt {
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	font-size:17px; 
+	letter-spacing:-1px;
+}
+
+.tFRGreenCheck {
+	float:left; 
+	width:20px; 
+}
+
+.todaysFRTxtB {
+	color:#1748ad; 
+	width:180px; 
+	float:left;
+	font-family:Verdana; 
+	font-size:14px;
+	padding-bottom:5px;
+}
+
+.tfrTXTBox {
+	background-color: #FFE983;
+	margin-left:22px;
+	margin-bottom:4px;
+}
+
+.freeAlerts {
+		border:1px solid #c7c7c7;
+		padding:7px;
+}
+
+.freeAlertsHead {
+	font-size:16;
+	font-weight:bold;	
+	margin-bottom:10px;
+}
+
+.faHeadGreen {
+	color:#2B9723;
+	display:inline;
+}
+
+.faSubHead {
+	font-size:14px;
+	color:#2654B2;
+	font-weight:bold;
+}
+
+.browseByCont {
+	color: 1748AD; 
+	font-size:10px;
+	padding-bottom:25px;
+	margin-left:35px;
+	margin-bottom:13px;
+}
+
+.hpRightSecWrap {
+	width:212px;
+	float:right;
+	margin-top:-49px;
+}
+
+.hpFeaturedArticle {
+	color:#545454;
+	font-size:14px;
+}
+
+.hp9ArtHeadline {
+	margin-left:-20px; 
+	*margin-left:18px; 
+	margin-bottom:-8px; 
+	*margin-bottom:-12px;
+}
+
+.hp9ArtHeadline ul {
+	list-style-type:none; 
+	list-style-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/layout/grayBullet.gif); 
+	*list-style-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/layout/grayBulletIE.gif); 
+	margin-left:0px;
+}
+
+.hp9ArtSpacer {
+	line-height:3px;
+}
+
+.blueBoxSpacer {
+	line-height:10px;
+}
+
+.secInHeadStocks { 
+	font-size:22px;
+	font-weight:bold;
+	color:#2e9726;
+	margin-bottom:12px;
+}
+
+.secInHeadStocksB { 
+	font-size:15px;
+	font-weight:bold;
+	color:#2e9726;
+	margin-bottom:12px;
+}
+
+.secInHeadOptions { 
+	font-size:22px;
+	font-weight:bold;
+	color:#cb6c00;
+}
+
+.secInHeadOptionsB { 
+	font-size:15px;
+	font-weight:bold;
+	color:#cb6c00;
+	margin-bottom:12px;
+}
+
+.secInHeadForex { 
+	font-size:22px;
+	font-weight:bold;
+	color:#016469;;
+}
+
+.secInHeadForexB { 
+	font-size:15px;
+	font-weight:bold;
+	color:#016469;;
+	margin-bottom:12px;
+}
+
+
+.secInHeadEminis { 
+	font-size:22px;
+	font-weight:bold;
+	color:#7c001a;
+}
+
+.secInHeadEminisB { 
+	font-size:15px;
+	font-weight:bold;
+	color:#7c001a;
+	margin-bottom:12px;
+}
+
+.secInArtHead {
+	font-size: 13px;
+	text-decoration: none;
+	font-weight:bold;
+	color: #013B8F;
+	margin-bottom:6px;
+}
+
+.secInArtHead a:hover {
+	font-size: 13px;
+	text-decoration: underline;
+	font-weight:bold;
+	color: #013B8F;
+	margin-bottom:6px; 
+}
+
+.secInArtTxt {
+	color:#545454;
+	margin-bottom:10px;
+}
+
+.hp3ArtHead {
+ 	font-size:22px;
+ 	font-weight:bold;
+ 	color:color: #1748AD;
+}
+
+.hp3ArtHeadSpace {
+	line-height:18px;
+}
+
+.articleRed {
+	color:#B70000;
+}
+
+.secInArtTime {
+	color:#C2C2C2;
+	font-size:11px;
+	display:inline;
+}
+
+.latestIdeas {
+	color:#545454;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align:left;
+}
+
+.stratSpacer {
+	line-height:4px;
+}
+
+.intAuthSpace {
+	margin-bottom:10px;
+	padding-top:5px;
+}
+
+.artIconGroup {
+	margin-top:6px;
+	margin-bottom:8px; 
+	clear:both; 
+	border-top:1px solid #c7c7c7; 
+	border-bottom:1px solid #c7c7c7;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.artIconGroupB{
+	margin-top:6px;
+	margin-bottom:8px; 
+	clear:both; 
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.newsTextAd {
+	margin-top:6px;
+	margin-bottom:10px; 
+	text-align:center;
+	margin-top:30px;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-weight:bold;  
+	font-size:11px; 
+	text-decoration:underline; 
+	color:##051cc0; 
+	border-top:1px solid #c7c7c7; 
+	border-bottom:1px solid #c7c7c7;
+	clear:both;
+}
+
+.artPopUpsWrap {
+	position:relative;
+}
+
+.artPopUp {
+	background-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/interface/infoPopUpBG.gif); 
+	color:#FFFFFF; 
+	font-size:12px; 
+	width:75px; 
+	height:42px; 
+	position:absolute; 
+	top:-40px; 
+	left:0px; 
+	text-align:center; 
+	font-family:arial; 
+	display:none;
+}
+
+.artPopUp2 {
+	background-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/interface/infoPopUpBG.gif); 
+	color:#FFFFFF; 
+	font-size:12px; 
+	width:75px; 
+	height:42px; 
+	position:absolute; 
+	top:-40px; 
+	left:70px; 
+	text-align:center; 
+	display:none;
+}
+
+.artPopUp3 {
+	background-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/interface/infoPopUpBG.gif); 
+	color:#FFFFFF; 
+	font-size:12px; 
+	width:75px; 
+	height:42px; 
+	position:absolute; 
+	top:-40px; 
+	left:150px; 
+	text-align:center; 
+	display:none;
+}
+
+.artPopUp4 {
+	background-image:url(https://web.archive.org/web/20090521145810im_/http://images.tradingmarkets.com/site/interface/infoPopUpBG.gif); 
+	color:#FFFFFF; 
+	font-size:12px; 
+	width:75px; 
+	height:42px; 
+	position:absolute; 
+	top:-40px; 
+	left:250px; 
+	text-align:center; 
+	display:none;
+}
+
+.artPopUpIn {
+	margin-top:7px;
+	z-index:5;
+}
+
+.artPopUpMail {
+	border:9px solid #CDCDCD; 
+	width:442px; 
+	position:absolute; 
+	left:-40px; 
+	top:50px; 
+	background:#FFFFFF; 
+	z-index:999; 
+	display:none;
+}
+
+.artPopUpMail2 {
+	background:#E5E4E5; 
+	margin-bottom:10px; 
+	font-weight:bold; 
+	width:442px; 
+	height:25px;
+}
+
+.artPopUpMail3 {
+	float:left;  
+	margin-top:8px;
+}
+
+.artPopUpMail4 {
+	float:right;  
+	margin-top:8px;
+}
+
+.artEmFrmEl {
+	width:220px; 
+	margin-left:10px; 
+	margin-right:5px; 
+	margin-top:5px;
+}
+
+.artRightBanner {
+	float:right; 
+	text-align:center; 
+	margin-left:10px; 
+	margin-bottom:15px;
+	width:350px;
+}
+
+.artIconGroupMR {
+	margin-right:20px;
+}
+
+.artIconRight {
+	margin-top:3px; 
+	display:inline; 
+	margin-left:90px;
+}
+
+.artIconRightB {
+	margin-top:3px; 
+	display:inline; 
+	margin-left:205px;
+}
+
+.quotesChartsHead {
+	font-size:18px;
+	font-weight:bold;
+}
+
+.mostReadHead {
+	color:#1748AD;
+	font-size:14px;
+}
+
+.mostPopularNews {
+	width:160px;
+	border:1px solid #c0c0c0;
+	margin-top:0px;
+	margin-top:5px;
+	padding:4px;
+}
+
+.mpNewsList {
+	font-size:11px;
+	marging-left:-35px;
+	padding-left:5px;
+	*margin-left:5px;
+	list-style-type:none;
+}
+
+.secInHead {
+	font-size:22px;
+	font-weight:bold;
+	color:#2e9726;
+	margin-bottom:12px;
+}
+.prBoxButton {
+	margin-left:2px;
+}
+
+.footerA {
+	width:1000px; 
+	height:300px; 
+	*height:330px;
+	margin:15px;
+	*margin-bottom:15px;
+}
+
+.footerB {
+	 border:1px solid #cccccc; 
+	 float:left; width:250px; 
+	 height:300px;
+	 *height:330px;
+}
+
+.premierLinksA {
+	 width:250px; 
+	 background-color:#959595;
+}
+
+.premierLinksB {
+	font-weight:bold; 
+	color:#FFFFFF; 
+	padding:5px;
+}
+
+.premierLinksBanner {
+	z-index:color:#000066; 
+	font-family:Arial; 
+	font-size:10px; 
+	line-height:11px;
+}
+
+.tradeCenterA {
+	 border:1px solid #cccccc; 
+	 float:left; 
+	 margin-left:30px; 
+	 width:416px; 
+	 height:300px; 
+	 *height:330px; 
+	 display:inline;
+}
+
+.tradeCenterB {
+	height:23px; 
+	width:416px; 
+	background-color:#959595;
+}
+
+.tradeCenterC {
+	 font-weight:bold; 
+	 color:#FFFFFF; 
+	 padding:5px;
+}
+
+.tradeCenterD {
+	float:left; 
+	width:50%; 
+	height:90%; 
+	margin-top:30px;
+}
+
+.tradeCenterE {
+	text-align:center; 
+	vertical-align:middle; 
+	height:30%;
+}
+
+.adSense {
+	float:left; 
+	height:100%; 
+	padding-left:20px; 
+	padding-top:20px; 
+	color: #2249B3; 
+	height:300px;
+}
+
+.tmDirSpacer {
+	margin-left:7px;
+}
+
+.style21 { 
+	font:Arial, Helvetica, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	color:#333333;
+}
+/*
+     FILE ARCHIVED ON 14:58:10 May 21, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:13 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.015
+  exclusion.robots: 0.243
+  PetaboxLoader3.resolve: 112.5 (3)
+  captures_list: 220.708
+  RedisCDXSource: 0.788
+  PetaboxLoader3.datanode: 102.163 (4)
+  LoadShardBlock: 174.546 (3)
+  load_resource: 79.566
+  CDXLines.iter: 34.604 (3)
+  exclusion.robots.policy: 0.228
+*/

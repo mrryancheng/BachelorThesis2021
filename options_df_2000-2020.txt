@@ -1,0 +1,442 @@
+
+
+[1] 2000
+# A tibble: 6,220,804 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2000-01-07 09CDA… 0           2000-01-22 2000-01-06 C      
+ 2 107616 2000-01-21 098D2… 0           2000-01-22 1999-12-30 P      
+ 3 107616 2000-02-18 09F7E… 0           2000-02-19 2000-02-18 P      
+ 4 107616 2000-03-02 0A436… 0           2000-03-18 2000-02-29 P      
+ 5 107616 2000-03-08 0A4D9… 0           2000-03-18 NA         P      
+ 6 107616 2000-03-14 0B594… 0           2001-01-20 NA         P      
+ 7 107616 2000-05-10 09B2E… 0           2000-05-20 2000-04-27 P      
+ 8 107616 2000-05-17 0A61D… 0           2000-05-20 2000-03-24 C      
+ 9 107616 2000-08-18 0B594… 0           2001-01-20 2000-08-11 C      
+10 107616 2000-11-17 0B3BC… 0           2000-11-18 2000-11-16 P      
+# … with 6,220,794 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2001
+# A tibble: 6,173,127 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2001-01-02 MMM.AA 0           2001-01-20 2001-01-02 C      
+ 2 107616 2001-01-02 MMM.AB 0           2001-01-20 2001-01-02 C      
+ 3 107616 2001-01-02 MMM.AC 0           2001-01-20 2001-01-02 C      
+ 4 107616 2001-01-02 MMM.AD 0           2001-01-20 2001-01-02 C      
+ 5 107616 2001-01-02 MMM.AE 0           2001-01-20 2001-01-02 C      
+ 6 107616 2001-01-02 MMM.AF 0           2001-01-20 2001-01-02 C      
+ 7 107616 2001-01-02 MMM.AN 0           2001-01-20 2000-12-05 C      
+ 8 107616 2001-01-02 MMM.AO 0           2001-01-20 2001-01-02 C      
+ 9 107616 2001-01-02 MMM.AP 0           2001-01-20 2001-01-02 C      
+10 107616 2001-01-02 MMM.AQ 0           2001-01-20 2001-01-02 C      
+# … with 6,173,117 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2002
+# A tibble: 6,459,207 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2002-01-02 LMU.AB 0           2004-01-17 2001-12-21 C      
+ 2 107616 2002-01-02 LMU.AD 0           2004-01-17 2001-12-28 C      
+ 3 107616 2002-01-02 LMU.AF 0           2004-01-17 2001-12-28 C      
+ 4 107616 2002-01-02 LMU.AH 0           2004-01-17 2001-12-26 C      
+ 5 107616 2002-01-02 LMU.AL 0           2004-01-17 2001-12-28 C      
+ 6 107616 2002-01-02 LMU.AN 0           2004-01-17 2001-12-26 C      
+ 7 107616 2002-01-02 LMU.AP 0           2004-01-17 2001-12-26 C      
+ 8 107616 2002-01-02 LMU.AR 0           2004-01-17 2001-12-10 C      
+ 9 107616 2002-01-02 LMU.AT 0           2004-01-17 2001-12-28 C      
+10 107616 2002-01-02 LMU.MB 0           2004-01-17 2001-12-21 P      
+# … with 6,459,197 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2003
+# A tibble: 6,516,821 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2003-02-21 MMM.BC 0           2003-02-22 2003-02-21 C      
+ 2 107616 2003-02-21 MMM.BD 0           2003-02-22 2003-02-21 C      
+ 3 107616 2003-02-21 MMM.BE 0           2003-02-22 2003-02-21 C      
+ 4 107616 2003-01-02 LMU.AB 0           2004-01-17 2003-01-02 C      
+ 5 107616 2003-01-02 LMU.AD 0           2004-01-17 2002-12-31 C      
+ 6 107616 2003-01-02 LMU.AF 0           2004-01-17 2003-01-02 C      
+ 7 107616 2003-01-02 LMU.AH 0           2004-01-17 2003-01-02 C      
+ 8 107616 2003-01-02 LMU.AJ 0           2004-01-17 2003-01-02 C      
+ 9 107616 2003-01-02 LMU.AL 0           2004-01-17 2002-12-19 C      
+10 107616 2003-01-02 LMU.AN 0           2004-01-17 2003-01-02 C      
+# … with 6,516,811 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2004
+# A tibble: 7,412,594 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2004-01-02 MMM.AF 0           2004-01-17 2003-11-28 C      
+ 2 107616 2004-01-02 MMM.AG 0           2004-01-17 2003-12-11 C      
+ 3 107616 2004-01-02 MMM.AH 0           2004-01-17 2003-12-08 C      
+ 4 107616 2004-01-02 MMM.AI 0           2004-01-17 2003-11-24 C      
+ 5 107616 2004-01-02 MMM.AJ 0           2004-01-17 2003-12-22 C      
+ 6 107616 2004-01-02 MMM.AK 0           2004-01-17 2003-11-26 C      
+ 7 107616 2004-01-02 MMM.AL 0           2004-01-17 2003-12-22 C      
+ 8 107616 2004-01-13 MMM.MF 0           2004-01-17 2003-09-30 P      
+ 9 107616 2004-01-13 MMM.MG 0           2004-01-17 2003-09-15 P      
+10 107616 2004-01-13 MMM.MH 0           2004-01-17 2003-09-30 P      
+# … with 7,412,584 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2005
+# A tibble: 8,200,459 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2005-01-13 MMM.AN 0           2005-01-22 2005-01-13 C      
+ 2 107616 2005-01-13 MMM.AO 0           2005-01-22 2005-01-13 C      
+ 3 107616 2005-01-18 MNZ.NS 0           2005-02-19 2005-01-18 P      
+ 4 107616 2005-01-18 MNZ.NT 0           2005-02-19 2005-01-18 P      
+ 5 107616 2005-01-18 MNZ.PA 0           2005-04-16 2005-01-03 P      
+ 6 107616 2005-01-20 MMM.AL 0           2005-01-22 2005-01-20 C      
+ 7 107616 2005-01-20 MMM.AM 0           2005-01-22 2005-01-20 C      
+ 8 107616 2005-01-20 MMM.AN 0           2005-01-22 2005-01-20 C      
+ 9 107616 2005-01-20 MMM.AO 0           2005-01-22 2005-01-20 C      
+10 107616 2005-01-20 MMM.AP 0           2005-01-22 2005-01-20 C      
+# … with 8,200,449 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2006
+# A tibble: 9,235,623 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2006-01-09 MMM.DJ 0           2006-04-22 2006-01-05 C      
+ 2 107616 2006-01-09 MMM.DK 0           2006-04-22 2006-01-06 C      
+ 3 107616 2006-01-10 MMM.BK 0           2006-02-18 2006-01-05 C      
+ 4 107616 2006-01-10 MMM.BL 0           2006-02-18 2006-01-10 C      
+ 5 107616 2006-01-10 MNZ.ST 0           2006-07-22 2005-12-21 P      
+ 6 107616 2006-01-11 MMM.AL 0           2006-01-21 2006-01-06 C      
+ 7 107616 2006-01-11 MMM.AM 0           2006-01-21 2006-01-09 C      
+ 8 107616 2006-01-11 MMM.AN 0           2006-01-21 2006-01-11 C      
+ 9 107616 2006-01-20 MMM.AL 0           2006-01-21 2006-01-20 C      
+10 107616 2006-01-20 MMM.AM 0           2006-01-21 2006-01-20 C      
+# … with 9,235,613 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2007
+# A tibble: 10,672,658 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2007-01-10 MNZ.PR 0           2007-04-21 2007-01-03 P      
+ 2 107616 2007-01-10 MNZ.PS 0           2007-04-21 2006-12-13 P      
+ 3 107616 2007-01-10 MNZ.QQ 0           2007-05-19 NA         P      
+ 4 107616 2007-01-10 MNZ.SA 0           2007-07-21 2006-12-14 P      
+ 5 107616 2007-01-11 MNZ.MB 0           2007-01-20 2006-12-20 P      
+ 6 107616 2007-01-11 MNZ.MD 0           2007-01-20 2007-01-04 P      
+ 7 107616 2007-01-11 MNZ.MQ 0           2007-01-20 2007-01-11 P      
+ 8 107616 2007-01-11 MNZ.MR 0           2007-01-20 2007-01-10 P      
+ 9 107616 2007-01-11 MNZ.MS 0           2007-01-20 2007-01-11 P      
+10 107616 2007-01-11 MNZ.MT 0           2007-01-20 2006-12-20 P      
+# … with 10,672,648 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2008
+# A tibble: 13,261,215 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2008-01-07 MNZ.NB 0           2008-02-16 2008-01-02 P      
+ 2 107616 2008-01-02 MMM.AK 0           2008-01-19 2007-12-27 C      
+ 3 107616 2008-01-02 MMM.AL 0           2008-01-19 2007-12-28 C      
+ 4 107616 2008-01-02 MMM.AM 0           2008-01-19 2007-12-27 C      
+ 5 107616 2008-01-02 MMM.AN 0           2008-01-19 2008-01-02 C      
+ 6 107616 2008-01-02 MMM.AO 0           2008-01-19 2008-01-02 C      
+ 7 107616 2008-01-02 MMM.AP 0           2008-01-19 2008-01-02 C      
+ 8 107616 2008-01-02 MMM.BL 0           2008-02-16 NA         C      
+ 9 107616 2008-01-02 MMM.BM 0           2008-02-16 NA         C      
+10 107616 2008-01-02 MMM.BN 0           2008-02-16 2008-01-02 C      
+# … with 13,261,205 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2009
+# A tibble: 16,395,477 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2009-01-16 MNZ.PT 0           2009-04-18 2008-11-11 P      
+ 2 107616 2009-01-28 WMU.MC 0           2010-01-16 2008-12-19 P      
+ 3 107616 2009-01-28 WMU.MD 0           2010-01-16 NA         P      
+ 4 107616 2009-02-02 MMM.OM 0           2009-03-21 NA         P      
+ 5 107616 2009-02-02 MMM.ON 0           2009-03-21 NA         P      
+ 6 107616 2009-02-02 MMM.OO 0           2009-03-21 NA         P      
+ 7 107616 2009-02-02 MMM.OP 0           2009-03-21 NA         P      
+ 8 107616 2009-01-02 MMM.BH 0           2009-02-21 NA         C      
+ 9 107616 2009-01-05 MMM.BG 0           2009-02-21 NA         C      
+10 107616 2009-01-05 MMM.MP 0           2009-01-17 2009-01-02 P      
+# … with 16,395,467 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2010
+# A tibble: 16,034,432 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2010-01-05 MMM.AI 0           2010-01-16 2009-11-23 C      
+ 2 107616 2010-01-05 MMM.AJ 0           2010-01-16 2009-11-17 C      
+ 3 107616 2010-01-05 MMM.AK 0           2010-01-16 2009-12-30 C      
+ 4 107616 2010-01-08 MMM.DL 0           2010-04-17 2010-01-04 C      
+ 5 107616 2010-01-12 MMM.AE 0           2010-01-16 2009-03-23 C      
+ 6 107616 2010-01-12 MMM.AF 0           2010-01-16 2010-01-12 C      
+ 7 107616 2010-01-12 MMM.AG 0           2010-01-16 2009-09-23 C      
+ 8 107616 2010-01-12 MMM.AH 0           2010-01-16 2009-11-24 C      
+ 9 107616 2010-01-12 MMM.AI 0           2010-01-16 2010-01-08 C      
+10 107616 2010-01-12 MMM.AJ 0           2010-01-16 2009-11-17 C      
+# … with 16,034,422 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2011
+# A tibble: 20,341,010 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-12-28 C      
+ 2 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-11-05 C      
+ 3 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-12-13 C      
+ 4 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-16 C      
+ 5 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-10-06 C      
+ 6 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-05 C      
+ 7 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-05 C      
+ 8 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-05 C      
+ 9 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-05 C      
+10 107616 2011-01-03 MMM 1… 1           2011-01-22 2010-09-05 C      
+# … with 20,341,000 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2012
+# A tibble: 26,018,796 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2012-01-03 MMM 1… 1           2012-02-18 NA         C      
+ 2 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 3 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 4 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 5 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 6 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 7 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 8 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+ 9 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+10 107616 2012-01-03 MMM 1… 1           2012-02-18 2012-01-03 C      
+# … with 26,018,786 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2013
+# A tibble: 31,006,126 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2013-01-03 MMM 1… 1           2013-04-20 2012-11-06 C      
+ 2 107616 2013-01-04 MMM 1… 1           2013-01-19 2012-12-12 P      
+ 3 107616 2013-01-04 MMM 1… 1           2013-01-19 NA         P      
+ 4 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+ 5 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+ 6 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+ 7 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+ 8 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+ 9 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+10 107616 2013-01-02 MMM 1… 1           2013-01-04 NA         C      
+# … with 31,006,116 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2014
+# A tibble: 44,276,207 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 2 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 3 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 4 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 5 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 6 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 7 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 8 107616 2014-01-02 MMM 1… 1           2014-01-03 NA         C      
+ 9 107616 2014-01-02 MMM 1… 1           2014-01-03 2013-12-06 C      
+10 107616 2014-01-02 MMM 1… 1           2014-01-03 2013-12-12 C      
+# … with 44,276,197 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2015
+# A tibble: 52,492,164 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2015-01-02 MMM 1… 1           2015-01-02 2014-12-22 P      
+ 2 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 3 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 4 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 5 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 6 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 7 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 8 107616 2015-01-02 MMM 1… 1           2015-01-02 NA         C      
+ 9 107616 2015-01-02 MMM 1… 1           2015-01-02 2014-12-17 C      
+10 107616 2015-01-02 MMM 1… 1           2015-01-02 2015-01-02 C      
+# … with 52,492,154 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2016
+# A tibble: 55,450,745 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 2 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 3 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 4 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 5 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 6 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 7 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 8 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+ 9 107616 2016-01-04 MMM 1… 1           2016-01-08 NA         C      
+10 107616 2016-01-04 MMM 1… 1           2016-01-08 2015-12-18 C      
+# … with 55,450,735 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2017
+# A tibble: 58,645,764 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 2 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 3 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 4 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 5 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 6 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 7 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 8 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+ 9 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+10 107616 2017-01-03 MMM 1… 1           2017-01-06 NA         C      
+# … with 58,645,754 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2018
+# A tibble: 63,475,691 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 2 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 3 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 4 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 5 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 6 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 7 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 8 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+ 9 107616 2018-01-02 MMM 1… 1           2018-01-05 2017-12-14 C      
+10 107616 2018-01-02 MMM 1… 1           2018-01-05 NA         C      
+# … with 63,475,681 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2019
+# A tibble: 66,474,543 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2019-01-02 MMM 1… 1           2019-02-08 NA         C      
+ 2 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 3 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 4 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 5 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 6 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 7 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 8 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+ 9 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+10 107616 2019-01-02 MMM 1… 1           2019-02-01 NA         C      
+# … with 66,474,533 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>
+
+[1] 2020
+# A tibble: 82,645,107 x 26
+    secid date       symbol symbol_flag exdate     last_date  cp_flag
+    <dbl> <date>     <chr>  <chr>       <date>     <date>     <chr>  
+ 1 107616 2020-01-02 MMM 2… 1           2020-01-03 2019-12-30 C      
+ 2 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 3 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 4 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 5 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 6 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 7 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 8 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+ 9 107616 2020-01-02 MMM 2… 1           2020-01-03 NA         C      
+10 107616 2020-01-02 MMM 2… 1           2020-01-03 2020-01-02 C      
+# … with 82,645,097 more rows, and 19 more variables: strike_price <dbl>,
+#   best_bid <dbl>, best_offer <dbl>, volume <dbl>, open_interest <dbl>,
+#   impl_volatility <dbl>, delta <dbl>, gamma <dbl>, vega <dbl>, theta <dbl>,
+#   optionid <dbl>, cfadj <dbl>, am_settlement <dbl>, contract_size <dbl>,
+#   ss_flag <chr>, forward_price <dbl>, expiry_indicator <chr>, root <chr>,
+#   suffix <chr>

@@ -1,0 +1,359 @@
+
+fixMozillaZIndex=true; //Fixes Z-Index problem  with Mozilla browsers but causes odd scrolling problem, toggle to see if it helps
+_menuCloseDelay=500;
+_menuOpenDelay=150;
+_subOffsetTop=2;
+_subOffsetLeft=-2;
+
+self.name = "Parent_Window"; 
+
+function openprchartsmenu(popurl){
+var winpops=window.open(popurl,"prchart","width=1000,height=800,status,scrollbars,resizable")
+}
+
+with(AllImagesStyle=new mm_style()){
+styleid=1;
+bordercolor="#000000";
+borderstyle="solid";
+fontstyle="normal";
+fontweight="normal";
+padding=3;
+}
+
+with(menuStyle=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnoover.gif";
+itemwidth=145;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+onbgcolor="#FFFFFF";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgover.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+with(menuStylepra=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverpra.gif";
+itemwidth=200;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverpra.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+with(menuStylepr=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverpr.gif";
+itemwidth=165;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverpr.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+
+
+with(menuStylefirstlrg=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverone_lrg.gif";
+itemwidth=250;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+bordercolor="#FFFFFF";
+borderstyle="solid";
+borderwidth=1;
+fontfamily="Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+onbgcolor="#FFFFFF";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverone_lrg.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+margin="4";
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+
+with(menuStylepralrg=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverpra_lrg.gif";
+itemwidth=250;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverpra_lrg.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+with(menuStylepramglrg=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverpra_mlrg.gif";
+itemwidth=220;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverpra_mlrg.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+with(menuStylepramglrgb=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverpra_mlrgb.gif";
+itemwidth=210;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+borderwidth=0;
+fontfamily="Verdana, Tahoma, Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverpra_mlrgb.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+with(menuStylefirst=new mm_style()){
+bgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgnooverone.gif";
+itemwidth=165;
+itemheight=23;
+image="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menuspacer.gif";
+bordercolor="#FFFFFF";
+borderstyle="solid";
+borderwidth=1;
+fontfamily="Arial";
+fontsize="11px";
+fontstyle="normal";
+fontweight="bold";
+headerbgcolor="#ffffff";
+headercolor="#000000";
+offbgcolor="#DFE9E8";
+offcolor="#2152A1";
+onbgcolor="#FFFFFF";
+overbgimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/manubgoverone.gif";
+oncolor="#2152A1";
+outfilter="randomdissolve(duration=0.0)";
+overfilter="Fade(duration=0.2);Alpha(opacity=100);";
+padding=5;
+margin="4";
+pagebgcolor="#82B6D7";
+pagecolor="black";
+separatorcolor="#FFFFFF";
+separatorsize=0;
+subimage="https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/layout/nav/menulist.gif";
+subimagepadding=0;
+}
+
+with(tradingmarkets=new menuname("Main Menu")){
+alwaysvisible=1;
+left=0;
+orientation="horizontal";
+style=AllImagesStyle;
+
+
+
+var browser=navigator.appName;
+
+
+top=135;
+
+
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/home_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/home_on.gif;url=http://www.tradingmarkets.com/?lid=gnav-all-home;showmenu=home;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/powerratings_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/powerratings_on.gif;url=http://www.tradingmarkets.com/.site/powerratings/?lid=gnav-all-powerratings;showmenu=powerratings;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/tradingideas_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/tradingideas_on.gif;url=http://store.tradingmarkets.com/subscriptions/free-trial-subscriptions.html?lid=subgnav-all-products-tradingideas;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/products_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/products_on.gif;url=http://store.tradingmarkets.com/?lid=gnav-all-products;showmenu=products;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/stocks_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/stocks_on.gif;url=http://www.tradingmarkets.com/.site/stocks/?lid=gnav-allstocks;showmenu=stocks;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/etf_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/etf_on.gif;url=http://www.tradingmarkets.com/.site/etfs/?lid=gnav-all-etfs;showmenu=etfs;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/options_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/options_on.gif;url=http://www.tradingmarkets.com/.site/options/?lid=gnav-all-options;showmenu=options;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/forex_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/forex_on.gif;url=http://www.tradingmarkets.com/.site/forex/?lid=gnav-all-forex;showmenu=forex;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/eminis_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/eminis_on.gif;url=http://www.tradingmarkets.com/.site/eminis/?lid=gnav-all-eminis;showmenu=eminis;");
+
+aI("image=http://images.tradingmarkets.com/site/layout/nav/may08/quoteschartsa_off.gif;overimage=http://images.tradingmarkets.com/site/layout/nav/may08/quoteschartsa_on.gif;url=http://www.tradingmarkets.com/.site/quotescharts/?qm_symbol=goog&lid=gnav-all-quotes;showmenu=quotescharts;");
+
+}
+
+with(tradingmarkets=new menuname("powerratings")){
+style=menuStylepralrg;
+aI("text=Short Term PowerRatings;url=/.site/powerratings/?lid=subgnav-all-powerratings-main;style=menuStylefirstlrg");
+aI("text=PowerRatings Charts <img src='https://web.archive.org/web/20090521145543/http://images.tradingmarkets.com/site/new_ysm.gif' border='0'>;url=javascript:openprchartsmenu('https://web.archive.org/web/20090521145543/http://charts.tradingmarkets.com/prcharts/?lid=subgnav-powerratings-charts');");
+aI("text=Training Classes;url=/.site/stocks/free/classes/free_trading_classes.cfm?lid=subgnav-all-powerratings-casses;");
+aI("text=PowerRatings Strategies;url=/.site/powerratings/commentary/powerratings/?lid=subgnav-all-powerratings-commentary;");
+}
+
+with(tradingmarkets=new menuname("stocks")){
+style=menuStylepr;
+aI("text=Main;url=/.site/stocks/?lid=subgnav-all-stocks-main;");
+aI("text=Trading Lessons;url=/.site/stocks/tradinglessons/?lid=subgnav-all-stocks-tradinglessons;");
+aI("text=Daily Stock Setups;url=http://store.tradingmarkets.com/subscriptions/free-trial-subscriptions.html?lid=subgnav-all-stocks-subscriptions;");
+aI("text=PowerRatings;url=/.site/powerratings/?lid=subgnav-all-stocks-powerratings;");
+aI("text=Indicators;url=/.site/stocks/indicators/?lid=subgnav-all-stocks-indicators;");
+aI("text=Charts;url=/.site/quotescharts/?qm_symbol=GOOG&lid=subgnav-all-stocks-quotescharts;");
+aI("text=Trading Contests;url=http://www.tradingmarkets.com/trading_contests/upordown/?lid=subgnav-all-stocks-contests;");
+aI("text=Contributors;url=/.site/stocks/contributors/?section=stocks&lid=subgnav-stocks-contributors;");
+}
+
+with(tradingmarkets=new menuname("etfs")){
+style=menuStylepr;
+aI("text=Main;url=/.site/etfs/?lid=subgnav-all-etfs-main;");
+aI("text=Trading Lessons;url=/.site/etfs/tradinglessons/?lid=subgnav-all-etfs-tradinglessons;");
+aI("text=Indicators;url=/.site/etfs/indicators/?lid=subgnav-all-etfs-indicators;");
+aI("text=Contributors;url=/.site/etfs/contributors/?section=etfs&lid=subgnav-etfs-contributors;");
+}
+
+with(tradingmarkets=new menuname("products")){
+style=menuStylepr;
+aI("text=Trading Ideas;url=http://store.tradingmarkets.com/subscriptions/free-trial-subscriptions.html?lid=subgnav-all-products-tradingideas;");
+aI("text=Stocks;url=http://store.tradingmarkets.com/products/books/stocks?lid=subgnav-all-products-stocks;");
+aI("text=Options;url=http://store.tradingmarkets.com/products/books/options?lid=subgnav-all-products-options;");
+aI("text=Forex;url=http://store.tradingmarkets.com/products/books/forex?lid=subgnav-all-products-forex;");
+aI("text=Eminis/Futures;url=http://store.tradingmarkets.com/products/books/Eminis-Futures?lid=subgnav-all-products-eminis;");
+aI("text=Events;url=http://store.tradingmarkets.com/events?lid=subgnav-all-products-events;");
+}
+
+with(tradingmarkets=new menuname("options")){
+style=menuStylepr;
+aI("text=Main;url=/.site/options/?lid=subgnav-all-options-main;");
+aI("text=Trading Ideas;url=/.site/options/tradingideas/?lid=subgnav-all-options-tradingideas;");
+aI("text=Trading Lessons;url=/.site/options/tradinglessons/?lid=subgnav-all-options-tradinglessons;");
+aI("text=Indicators;url=/.site/options/indicators/?lid=subgnav-all-options-indicators;");
+aI("text=Contributors;url=/.site/options/contributors/?section=options&lid=subgnav-options-contributors;");
+}
+with(tradingmarkets=new menuname("forex")){
+style=menuStylepra;
+aI("text=Main;url=/.site/forex/?lid=subgnav-forex-main;");
+aI("text=Trading Ideas;url=/.site/forex/tradingideas/?lid=subgnav-all-forex-tradingideas;");
+aI("text=Trading Lessons;url=/.site/forex/tradinglessons/?lid=subgnav-all-forex-tradinglessons;");
+aI("text=Forex Momentum Index;url=/.site/forex/findicators/trading/fxrpm.cfm?lid=subgnav-all-forex-fxrpm;");
+aI("text=Forex Pivots;url=/.site/forex/findicator/trading/forexpivotsfull.cfm?lid=subgnav-all-forex-forexpivots;");
+aI("text=Contributors;url=/.site/forex/contributors/?section=forex?lid=subgnav-all-forex-contributors;");
+}
+with(tradingmarkets=new menuname("eminis")){
+style=menuStylepr;
+aI("text=Main;url=/.site/eminis/?lid=subgnav-eminis-main;");
+aI("text=Trading Ideas;url=/.site/eminis/tradingideas/?lid=subgnav-all-eminis-tradingideas;");
+aI("text=Trading Lessons;url=/.site/eminis/tradinglessons/?lid=subgnav-all-eminis-tradinglessons;");
+aI("text=Futures Pivots;url=/.site/eminis/findicator/trading/futurepivotsfull.cfm?lid=subgnav-all-eminis-futurepivots;");
+aI("text=Indicators;url=/.site/eminis/indicators/?lid=subgnav-all-eminis-indicators;");
+aI("text=Contributors;url=/.site/eminis/contributors/?section=eminis&lid=subgnav-all-eminis-contributors;");
+}
+with(tradingmarkets=new menuname("quotescharts")){
+style=menuStylepra;
+aI("text=Main;url=/.site/quotescharts/?qm_symbol=goog?lid=subgnav-all-quotescharts-main;");
+aI("text=PowerRatings Charts;url=javascript:openprchartsmenu('https://web.archive.org/web/20090521145543/http://charts.tradingmarkets.com/prcharts/?lid=subgnav-all-quotescharts-charts');");
+}
+with(tradingmarkets=new menuname("contests")){
+style=menuStylepra;
+aI("text=Up or Down;url=http://www.tradingmarkets.com/trading_contests/upordown/?lid=subgnav-all-contests-upordown;");
+aI("text=Forex;url=http://www.tradingmarkets.com/trading_contests/forexupordown/?lid=subgnav-all-contests-forex;");
+}
+
+
+
+drawMenus();
+

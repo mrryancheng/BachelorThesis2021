@@ -1,0 +1,37 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+document.write ('<A HREF="https://web.archive.org/web/20090523231709/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/698029949/x04/Trademkt/Sogo05-0709-150x40/170x40.gif/7a2f48724e556f5967386341416c6836?x" target="_top"><IMG SRC="https://web.archive.org/web/20090523231709/http://imagec17.247realmedia.com/RealMedia/ads/Creatives/Trademkt/Sogo05-0709-150x40/170x40.gif/1241056805"  WIDTH=150 HEIGHT=40 ALT=""  BORDER="0"></A>');
+
+
+}
+/*
+     FILE ARCHIVED ON 23:17:09 May 23, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:14 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 94.609 (3)
+  CDXLines.iter: 25.747 (3)
+  PetaboxLoader3.datanode: 106.292 (4)
+  exclusion.robots.policy: 0.225
+  PetaboxLoader3.resolve: 55.521
+  load_resource: 98.74
+  RedisCDXSource: 6.781
+  exclusion.robots: 0.241
+  captures_list: 134.754
+  esindex: 0.018
+*/

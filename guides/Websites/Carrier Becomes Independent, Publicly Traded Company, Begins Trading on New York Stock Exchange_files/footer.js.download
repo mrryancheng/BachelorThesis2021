@@ -1,0 +1,1 @@
+require(['icon-toggle'],function(iconToggle){iconToggle('dropdown','btr','bt-angle-up','bt-angle-down','footer-global-sites-dropup');iconToggle('dropdown','btr','bt-angle-up','bt-angle-down','footer-contact-dropup');iconToggle('dropdown','btr','bt-angle-up','bt-angle-down','footer-services-dropup');});

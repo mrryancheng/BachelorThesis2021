@@ -1,0 +1,463 @@
+//	===============================================
+//	Pop-up Window functions
+//	===============================================
+//	These are the two functions (copied and slightly
+//	modified from WRDS 1.0) which allow us to open
+//	1) variable reference and 2) 'How does this work?'
+//	documentation pages in a re-usable, new window.
+//  -----------------------------------------------
+function openMe(linkURL,w,h,t,l) {
+	flyout=window.open(linkURL,"flyout","resizable=yes,scrollbars=yes,width="+w+",height="+h+",top="+t+",left="+l)
+}
+
+function showMe(linkURL,w,h,t,l) {
+	if (showMe.arguments.length != 5) {
+		if (!w) {
+			w=400;
+		}
+		if (!h) {
+			h=400;
+		}
+		if (!t) {
+			t=200;
+		}
+		if (!l) {
+			l=300;
+		}
+	}
+	if (!window.flyout) {
+		openMe(linkURL,w,h,t,l); // Never opened
+	} else {
+		if (flyout.closed) {
+			openMe(linkURL,w,h,t,l); // Was opened, but now closed
+		} else {
+			openMe(linkURL,w,h,t,l);
+			flyout.focus(linkURL);   // Now Open
+		}
+	}
+}
+
+function checkAll(field) {
+	for (i = 0; i < field.length; i++) {
+		field[i].checked = true ;
+	}
+}
+
+function uncheckAll(field) {
+	for (i = 0; i < field.length; i++) {
+		field[i].checked = false;
+	}
+}
+//	===============================================
+//							END
+//	Pop-up Window functions
+//	===============================================
+
+
+//  =====================================================
+//  Browser Info
+//  =====================================================
+//  Script to generate a browser info string on request.
+//  This is frequently used when creating a form for the
+//  user to report website issues. The browserInfo string
+//  can be sent as a pre-populated form element to inform
+//  administrators of the user's environment
+//  -----------------------------------------------------
+function browserInfo() {
+    /**
+     * JavaScript Client Detection
+     * (C) viazenetti GmbH (Christian Ludwig) <--- thank you!
+     */
+
+
+    var unknown = '-';
+
+    // screen
+    var screenSize = '';
+    if (screen.width) {
+        width = (screen.width) ? screen.width : '';
+        height = (screen.height) ? screen.height : '';
+        screenSize += '' + width + " x " + height;
+    }
+    
+    // window
+    var windowSize = '';
+    if (window.innerWidth) {
+        width = (window.innerWidth) ? window.innerWidth : '';
+        height = (window.innerHeight) ? window.innerHeight : '';
+        windowSize += '' + width + " x " + height;
+    }
+
+    //browser
+    var nVer = navigator.appVersion;
+    var nAgt = navigator.userAgent;
+    var browser = navigator.appName;
+    var version = '' + parseFloat(navigator.appVersion);
+    var majorVersion = parseInt(navigator.appVersion, 10);
+    var nameOffset, verOffset, ix;
+
+    // Opera
+    if ((verOffset = nAgt.indexOf('Opera')) != -1) {
+        browser = 'Opera';
+        version = nAgt.substring(verOffset + 6);
+        if ((verOffset = nAgt.indexOf('Version')) != -1) {
+            version = nAgt.substring(verOffset + 8);
+        }
+    }
+    // MSIE
+    else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
+        browser = 'Microsoft Internet Explorer';
+        version = nAgt.substring(verOffset + 5);
+    }
+    // Chrome
+    else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
+        browser = 'Chrome';
+        version = nAgt.substring(verOffset + 7);
+    }
+    // Safari
+    else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
+        browser = 'Safari';
+        version = nAgt.substring(verOffset + 7);
+        if ((verOffset = nAgt.indexOf('Version')) != -1) {
+            version = nAgt.substring(verOffset + 8);
+        }
+    }
+    // Firefox
+    else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
+        browser = 'Firefox';
+        version = nAgt.substring(verOffset + 8);
+    }
+    // MSIE 11+
+    else if (nAgt.indexOf('Trident/') != -1) {
+        browser = 'Microsoft Internet Explorer';
+        version = nAgt.substring(nAgt.indexOf('rv:') + 3);
+    }
+    // Other browsers
+    else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
+        browser = nAgt.substring(nameOffset, verOffset);
+        version = nAgt.substring(verOffset + 1);
+        if (browser.toLowerCase() == browser.toUpperCase()) {
+            browser = navigator.appName;
+        }
+    }
+    // trim the version string
+    if ((ix = version.indexOf(';')) != -1) version = version.substring(0, ix);
+    if ((ix = version.indexOf(' ')) != -1) version = version.substring(0, ix);
+    if ((ix = version.indexOf(')')) != -1) version = version.substring(0, ix);
+
+    majorVersion = parseInt('' + version, 10);
+    if (isNaN(majorVersion)) {
+        version = '' + parseFloat(navigator.appVersion);
+        majorVersion = parseInt(navigator.appVersion, 10);
+    }
+
+    // mobile version
+    var mobile = /Mobile|mini|Fennec|Android|iP(ad|od|hone)/.test(nVer);
+
+    // cookie
+    var cookieEnabled = (navigator.cookieEnabled) ? true : false;
+
+    if (typeof navigator.cookieEnabled == 'undefined' && !cookieEnabled) {
+        document.cookie = 'testcookie';
+        cookieEnabled = (document.cookie.indexOf('testcookie') != -1) ? true : false;
+    }
+
+    // system
+    var os = unknown;
+    var clientStrings = [
+        {s:'Windows 3.11', r:/Win16/},
+        {s:'Windows 95', r:/(Windows 95|Win95|Windows_95)/},
+        {s:'Windows ME', r:/(Win 9x 4.90|Windows ME)/},
+        {s:'Windows 98', r:/(Windows 98|Win98)/},
+        {s:'Windows CE', r:/Windows CE/},
+        {s:'Windows 2000', r:/(Windows NT 5.0|Windows 2000)/},
+        {s:'Windows XP', r:/(Windows NT 5.1|Windows XP)/},
+        {s:'Windows Server 2003', r:/Windows NT 5.2/},
+        {s:'Windows Vista', r:/Windows NT 6.0/},
+        {s:'Windows 7', r:/(Windows 7|Windows NT 6.1)/},
+        {s:'Windows 8.1', r:/(Windows 8.1|Windows NT 6.3)/},
+        {s:'Windows 8', r:/(Windows 8|Windows NT 6.2)/},
+        {s:'Windows NT 4.0', r:/(Windows NT 4.0|WinNT4.0|WinNT|Windows NT)/},
+        {s:'Windows ME', r:/Windows ME/},
+        {s:'Android', r:/Android/},
+        {s:'Open BSD', r:/OpenBSD/},
+        {s:'Sun OS', r:/SunOS/},
+        {s:'Linux', r:/(Linux|X11)/},
+        {s:'iOS', r:/(iPhone|iPad|iPod)/},
+        {s:'Mac OS X', r:/Mac OS X/},
+        {s:'Mac OS', r:/(MacPPC|MacIntel|Mac_PowerPC|Macintosh)/},
+        {s:'QNX', r:/QNX/},
+        {s:'UNIX', r:/UNIX/},
+        {s:'BeOS', r:/BeOS/},
+        {s:'OS/2', r:/OS\/2/},
+        {s:'Search Bot', r:/(nuhk|Googlebot|Yammybot|Openbot|Slurp|MSNBot|Ask Jeeves\/Teoma|ia_archiver)/}
+    ];
+    for (var id in clientStrings) {
+        var cs = clientStrings[id];
+        if (cs.r.test(nAgt)) {
+            os = cs.s;
+            break;
+        }
+    }
+
+    var osVersion = unknown;
+
+    if (/Windows/.test(os)) {
+        osVersion = /Windows (.*)/.exec(os)[1];
+        os = 'Windows';
+    }
+
+    switch (os) {
+        case 'Mac OS X':
+            osVersion = /Mac OS X (10[\.\_\d]+)/.exec(nAgt)[1];
+            break;
+
+        case 'Android':
+            osVersion = /Android ([\.\_\d]+)/.exec(nAgt)[1];
+            break;
+
+        case 'iOS':
+            osVersion = /OS (\d+)_(\d+)_?(\d+)?/.exec(nVer);
+            osVersion = osVersion[1] + '.' + osVersion[2] + '.' + (osVersion[3] | 0);
+            break;
+    }
+    
+    // flash (you'll need to include swfobject)
+    /* script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" */
+    var flashVersion = 'no check';
+    if (typeof swfobject != 'undefined') {
+        var fv = swfobject.getFlashPlayerVersion();
+        if (fv.major > 0) {
+            flashVersion = fv.major + '.' + fv.minor + ' r' + fv.release;
+        }
+        else  {
+            flashVersion = unknown;
+        }
+    }
+
+    var jscd = {
+        window: windowSize,
+        screen: screenSize,
+        browser: browser,
+        browserVersion: version,
+        mobile: mobile,
+        os: os,
+        osVersion: osVersion,
+        cookies: cookieEnabled,
+        flashVersion: flashVersion
+    };
+
+    return jscd;
+}
+//  =====================================================
+//                          END
+//  Browser Info
+//  =====================================================
+
+
+
+//  =====================================================
+//  Forever dismissable
+//  =====================================================
+//  Script to allow any properly composed bootstrap3 
+//  alert window to become forever dismissable by way
+//  of storing cookies on the user's browser.
+//  -----------------------------------------------------
+function enableForeverDismissable(cookieName, alertDivId, dismissButtonId,  dismisForNowCheckBoxId, dismisForeverCheckBoxId) {
+    // Check if alert has been closed
+    if( $.cookie(cookieName) === "true" ){
+        $("#"+alertDivId).hide();
+    } else {
+        $("#"+alertDivId).show();
+    }
+
+     // Grab your button by ID
+    $("#"+dismissButtonId).click(function( e ){
+
+        // Do not perform default action when button is clicked
+        e.preventDefault();
+
+        // If dismissForNow is checked, dismiss for the extent of the session
+        if (dismisForNowCheckBoxId) {
+            if($("#"+dismisForNowCheckBoxId).is(':checked')) {
+                $.cookie(cookieName, "true", { path: "/" });
+            }
+        }
+
+        // If dismissForever is checked, dismiss for a year
+        if($("#"+dismisForeverCheckBoxId).is(':checked')) {
+            $.cookie(cookieName, "true", { path: "/", expires: 365 });
+        }
+    });
+}
+//  =====================================================
+//                          END
+//  Forever dismissable
+//  =====================================================
+
+
+$(document).ready(function() {
+    var $body = $('body');
+    var $menu = $('.main-nav');
+    var $mainpanel = $('.main-panel');
+    var $navpane = $('.nav-pane');
+    var $mobilenav = $('#mobile-navlink > li > a');
+    var $menuover = $('.menu-overlay');
+    var $closenav = $('.main-links, .nav-content, .overlay-link');
+    var $fontsizes = $('.main-section p, .main-section span, .main-section a, .main-section button');
+
+    // Remove the loading class to enable transitions
+    $body.removeClass('loading');
+
+    // Mobile close and open menu icon
+    $('#menu-icon, #menu-icon-2').on('click', function(e) {
+        e.preventDefault();
+        $('#menu-icon').toggleClass('open');
+        $menu.slideToggle('300');
+    });
+
+    // Mobile icons sub nav
+    $('.overlay-link').click(function(e) {
+        e.preventDefault();
+        $(this).tab('show');
+        $mobilenav.removeClass('active');
+        $(this).closest('a').addClass('active');
+    });
+
+    // Click on search icon to focus on mobile search
+    $('#mobile-srch').click(function() {
+        $('.main-srch').focus();
+    });
+
+    // Header Nav - tab
+    $('#navlinks a').click(function(e) {
+        var tab = $(this);
+        $mainpanel.addClass('slide-main');
+
+        if ($(window).width() < 768) {
+            $body.addClass('body-noscroll');
+            $menuover.addClass('menu-overlay-push');
+            $mobilenav.removeClass('active');
+       
+            $('.overlay-link[aria-controls="' + tab.attr('aria-controls') + '"]').addClass('active');
+        }
+        if (tab.hasClass('active')) {
+            window.setTimeout(function() {
+                $mainpanel.removeClass('slide-main');
+                $navpane.removeClass('active');
+                tab.removeClass('active');
+                if ($(window).width() < 768) {
+                    $body.removeClass('body-noscroll');
+                }
+            }, 1);
+        }
+    });
+    // Close Sub Nav by clicking outside of it
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest($closenav).length) {
+            $mainpanel.removeClass('slide-main');
+            $navpane.removeClass('active');
+            $('#navlinks li a').removeClass('active');
+            if ($(window).width() < 768) {
+                $body.removeClass('body-noscroll');
+                $menuover.removeClass('menu-overlay-push');
+                $mobilenav.removeClass('active');
+            }
+        }
+    });
+
+
+    $('#incfont').click(function() {
+        curSize = parseInt($fontsizes.css('font-size')) + 2;
+        if (curSize <= 20) {
+            $fontsizes.css('font-size', curSize);
+        }
+    });
+    $('#decfont').click(function() {
+        curSize = parseInt($fontsizes.css('font-size')) - 2;
+        if (curSize >= 12) {
+            $fontsizes.css('font-size', curSize);
+        }
+    });
+
+    // Table - click on whole row to go to link
+    $('tr[data-href]').on('click', function() {
+        document.location = $(this).data('href');
+    });
+
+});
+//  =====================================================
+//                          END
+//  Javascript that came from the old scripts.js 20170301
+//  =====================================================
+
+
+
+$(document).ready(function () {
+    //sets the wrds_cf_holder_var
+    var wrds_cf_url_holder;
+
+    $(wrds_cf_url).each(function (i, val) {
+        $.each(val, function (k, v) {
+            wrds_cf_url_holder = v;
+        });
+    });
+
+    /*Handles calling the method that checks the user's quota usage and makes it available to display to the user.  Note that this affects only the information displayed to the user; dissabling this call will not bypass the quota */
+    var quotaFill = "0";
+    if (quotaFill === -2) {
+        $.post(wrds_cf_url_holder + "cfc/myWRDS.cfc", {method: "putQuotaOnUser", returnformat: "plain"});
+    }
+
+    //<!-- This enables the tooltips on the queryform pages -->
+    $(".has_form_tooltip").tooltip();
+
+    return false;
+});
+
+$(document).ready(function(){
+
+    //////////////////////////////////////////////////////////////////// dropdown func START
+    $(".bs-dropdown-ul li .bs-dropdown-list").click(function(){
+      var liVal = $(this).data("value");
+      var liTitle = $(this).data("title");
+      var liParentPK = $(this).data("ppk");
+      var liTXTholder = "#bs-dropdown-status-id-" + liParentPK;
+      $(liTXTholder).html(liTitle);
+
+      var placeHolder = "featureRequestVote-" + liParentPK;
+      var placeHolder2 = "[class='" + placeHolder + "']";
+
+      $(placeHolder2).bootstrapSwitch('disabled',true);
+
+      if(liVal == 3 || liVal == 4) //3 or 4 is accepted and open
+      {
+      $(placeHolder2).bootstrapSwitch('disabled',false);
+      }
+      else
+      {
+      $(placeHolder2).bootstrapSwitch('disabled',true);
+      }
+
+      $.ajax({
+          url : "../../../feature/status/"+liParentPK+"/"+liVal+"/",
+          type : "GET",
+
+
+          // handle a successful response
+          success : function(json) {
+              console.log("status update did work");
+          },
+
+          // handle a non-successful response!!!
+          error : function(xhr,errmsg,err) {
+            console.log("status update did not work");
+            console.log(err);
+          }
+
+      });
+
+    });
+    //////////////////////////////////////////////////////////////////// dropdown func STOP
+
+  });

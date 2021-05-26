@@ -1,0 +1,98 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('<ul>\n');
+document.write ('<li>\n');
+document.write ('<p style="line-height: 100%">\n');
+document.write ('<a href="https://web.archive.org/web/20090523231736/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/1801445841/x10/Trademkt/PremierTextlink0309/PremierTextlink090718381429.html/7a2f48724e556f5967386341416c6836?http://www.optionsxpress.com/\n');
+document.write ('">Stocks, options, futures in one account at optionsXpress</a>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<ul>\n');
+document.write ('<li>\n');
+document.write ('<p style="line-height: 100%">\n');
+document.write ('<a href="https://web.archive.org/web/20090523231736/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/1801445841/x10/Trademkt/PremierTextlink0309/PremierTextlink090718381429.html/7a2f48724e556f5967386341416c6836?http://clk.atdmt.com/SOH/go/142624435/direct/01/">Switch to thinkorswim and get a $100 ACAT rebate</a>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<ul>\n');
+document.write ('<li>\n');
+document.write ('<p style="line-height: 100%">\n');
+document.write ('<a href="https://web.archive.org/web/20090523231736/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/1801445841/x10/Trademkt/PremierTextlink0309/PremierTextlink090718381429.html/7a2f48724e556f5967386341416c6836?http://www.sogotrade.com/?utm_source=Tradingmarkets&utm_medium=TradingmarketsTextFeb&utm_campaign=TradingmarketsTextFeb">100 free trades, up to $100 back</a>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<ul>\n');
+document.write ('<li>\n');
+document.write ('<p style="line-height: 100%">\n');
+document.write ('<a href="https://web.archive.org/web/20090523231736/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/1801445841/x10/Trademkt/PremierTextlink0309/PremierTextlink090718381429.html/7a2f48724e556f5967386341416c6836?http://ad.doubleclick.net/clk;213653013;35118785;b?http://hello.zecco.com/landing/search/search2/">Get stock trades for only $4.50 each at Zecco Trading</a>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('<ul>\n');
+document.write ('<li>\n');
+document.write ('<p style="line-height: 100%">\n');
+document.write ('<a href="https://web.archive.org/web/20090523231736/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/1801445841/x10/Trademkt/PremierTextlink0309/PremierTextlink090718381429.html/7a2f48724e556f5967386341416c6836?http://ad.doubleclick.net/clk;213921033;35567690;e?http://www.optionseducation.org/seminars/podcasts.jsp?dfacid=xxxx">Download a free Options Basics Podcast.</a>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('</ul>\n');
+document.write ('\n');
+document.write ('<img src="https://web.archive.org/web/20090523231736/http://ad.doubleclick.net/ad/N4897.TradingMarkets/B3548246.14;sz=1x1;ord=1801445841?">');
+
+
+}
+/*
+     FILE ARCHIVED ON 23:17:36 May 23, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:14 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 0.558
+  exclusion.robots: 0.138
+  exclusion.robots.policy: 0.128
+  CDXLines.iter: 18.736 (3)
+  load_resource: 94.015
+  LoadShardBlock: 40.866 (3)
+  esindex: 0.009
+  captures_list: 64.235
+  PetaboxLoader3.datanode: 84.766 (4)
+  PetaboxLoader3.resolve: 37.588
+*/

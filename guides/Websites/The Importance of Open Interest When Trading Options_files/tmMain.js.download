@@ -1,0 +1,60 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+	function runQuote(form) {
+		if (document.quoteform.quoteType[0].checked){
+		var URL = '/.site/powerratings?lid=leftPRbox&sym=' + document.quoteform.symbol.value;
+		}
+		if (document.quoteform.quoteType[1].checked){ 
+		var URL = 'https://web.archive.org/web/20090521145704/http://app.quotemedia.com/quotetools/clientForward?targetURL=http://www.tradingmarkets.com/.site/quotescharts/?lid=leftQuoteBox&qm_symbol=' + document.quoteform.symbol.value + '&action=showCharts&chscale=1y&chtype=BarChart&symbol=' + document.quoteform.symbol.value;
+		}
+	window.location.href = URL;
+	return false;
+	}
+	
+	function HideContent(d) {
+		if(d.length < 1) { return; }
+		document.getElementById(d).style.display = "none";
+		}
+	function ShowContent(d) {
+		if(d.length < 1) { return; }
+		document.getElementById(d).style.display = "block";
+		}
+	function ReverseContentDisplay(d) {
+		if(d.length < 1) { return; }
+		if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+		else { document.getElementById(d).style.display = "none"; }
+	}
+
+
+}
+/*
+     FILE ARCHIVED ON 14:57:04 May 21, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:13 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.194
+  LoadShardBlock: 110.965 (3)
+  exclusion.robots.policy: 0.181
+  captures_list: 135.365
+  load_resource: 193.853
+  CDXLines.iter: 19.006 (3)
+  PetaboxLoader3.resolve: 70.369
+  RedisCDXSource: 0.764
+  esindex: 0.009
+  PetaboxLoader3.datanode: 130.796 (4)
+*/

@@ -1,0 +1,1 @@
+require(['jquery'],function($){$('.to-clipboard input').on('focus',function(){$(this).select();})});

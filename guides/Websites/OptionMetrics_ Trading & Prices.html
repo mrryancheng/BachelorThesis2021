@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/ -->
+<html class="no-js" lang="en"><script async="" src="./OptionMetrics_ Trading &amp; Prices_files/gtm.js.download"></script><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script>dataLayer = [{"http_referer": "https://wrds-web.wharton.upenn.edu/", "current_time": "March, 27 2021 20:23:04", "user_first_name": "Ryan", "user_last_name": "Cheng", "user_subscriber_type": "academic", "email": "ryan.cheng@student.unisg.ch", "remote_address": "85.195.250.12", "user_expiration_date": "October, 10 2021 00:00:00", "user_type": "masters", "user_subscriber_id": 436, "user_id": 36155, "script_name": "/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/", "instance": "wrds-www.wharton.upenn.edu", "logged_in": true, "user_subscriber_code": "unisg", "user_name": "ryanc196", "environment": null, "auth_method": "", "site_version": 4}];</script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5SZMJH');</script>
+<!-- End Google Tag Manager -->
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Wharton Research Data Services">
+	<meta name="copyright" content="© 1993-2021 Wharton Research Data Services">
+	<meta name="robots" content="all">
+	<meta name="msvalidate.01" content="15761FA466F26B7A617FF162A10F17B1">
+	<meta http-equiv="content-language" content="en-us">
+	<link rel="shortcut icon" type="image/png" href="https://wrds-www.wharton.upenn.edu/static/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://wrds-www.wharton.upenn.edu/static/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://wrds-www.wharton.upenn.edu/static/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://wrds-www.wharton.upenn.edu/static/img/favicon-16x16.png">
+
+	
+
+	
+
+	
+		<link href="./OptionMetrics_ Trading &amp; Prices_files/bootstrap.css" rel="stylesheet">
+        <link href="./OptionMetrics_ Trading &amp; Prices_files/fontawesome.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./OptionMetrics_ Trading &amp; Prices_files/hijack-styles.css">
+	
+
+    
+        <script type="text/javascript" src="./OptionMetrics_ Trading &amp; Prices_files/jquery-3.1.1.min.js.download"></script>
+        <script type="text/javascript" src="./OptionMetrics_ Trading &amp; Prices_files/bootstrap.bundle.min.js.download"></script>
+    
+
+	
+	<link rel="stylesheet" href="./OptionMetrics_ Trading &amp; Prices_files/katex.min.css" integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
+
+	
+		
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OptionMetrics: Trading &amp; Prices">
+<meta name="twitter:description" content="Wharton Research Data Services taps the most comprehensive sources of financial, accounting, economic, management, marketing, banking, and insurance data">
+
+
+
+
+<meta property="og:url" content="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/">
+<meta property="og:title" content="OptionMetrics: Trading &amp; Prices">
+<meta property="og:description" content="Wharton Research Data Services taps the most comprehensive sources of financial, accounting, economic, management, marketing, banking, and insurance data">
+<meta property="og:site_name" content="WRDS">
+
+
+
+
+<meta itemprop="url" content="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/">
+<meta itemprop="name" content="OptionMetrics: Trading &amp; Prices">
+<meta itemprop="description" content="Wharton Research Data Services taps the most comprehensive sources of financial, accounting, economic, management, marketing, banking, and insurance data">
+
+
+<title>OptionMetrics: Trading &amp; Prices</title>
+<meta name="description" content="Wharton Research Data Services taps the most comprehensive sources of financial, accounting, economic, management, marketing, banking, and insurance data">
+
+
+	
+
+	
+		
+		<meta name="keywords" content="">
+	
+
+</head>
+
+<body class="defaultTheme home" data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed=""><div id="bit-notification-bar-spacer" style="height: 42px;"></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SZMJH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<!--[if lte IE 11]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser.
+			Please <a href="http://browsehappy.com/">upgrade your browser</a>
+			to improve your experience.
+			</p>
+	<![endif]-->
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+<div class="menu-overlay">
+    <ul id="mobile-navlink" role="tablist">
+        <li>
+            <div id="menu-icon-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/##" id="mobile-srch"><i class="fa fa-search"></i></a></li>
+        
+        <li><a href="https://wrds-www.wharton.upenn.edu/"><i class="fa fa-home"></i></a></li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#get-data-nav" aria-controls="get-data-nav" role="tab" data-toggle="tab" class="overlay-link"><i class="fa fa-bar-chart"></i></a></li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#analytics-nav" aria-controls="analytics-nav" role="tab" data-toggle="tab" class="overlay-link"><i class="fa fa-area-chart"></i></a></li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#classroom-nav" aria-controls="classroom-nav" role="tab" data-toggle="tab" class="overlay-link"><i class="fa fa-graduation-cap"></i></a></li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#research-nav" aria-controls="research-nav" role="tab" data-toggle="tab" class="overlay-link"><i class="fa fa-laptop"></i></a></li>
+        
+            <li><a href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#support-nav" aria-controls="support-nav" role="tab" data-toggle="tab" class="overlay-link"><i class="fa fa-life-ring"></i></a></li>
+        
+    </ul>
+</div>
+
+
+<nav class="header-nav
+ log-off  d-print-none">
+
+
+    <div class="top-nav">
+        <div class="container">
+            <div class="main-head">
+                <div class="main-logo">
+                    <div class="row">
+                        <div class="col-sm-2 col-md-6">
+                            <a href="https://wrds-www.wharton.upenn.edu/" title="WRDS Home"><img src="./OptionMetrics_ Trading &amp; Prices_files/Wharton_WRDS_logo.svg" alt="Wharton wrds Logo"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-nav">
+
+        
+
+
+
+
+<div class="utility-wrap">
+	<div class="redbar"></div>
+		<ul class="utility-links">
+			<li class="utility-link">
+			
+				<div class="btn-group-sm">
+
+					<!-- Allows screen readers and keyboard navigators to skip the header.
+					See https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/ for more -->
+					<a class="btn btn-primary sr-only sr-only-focusable" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#content">Skip to main content</a>
+					
+					
+					
+					
+					
+					<a class="btn btn-primary" href="https://wrds-support.wharton.upenn.edu/hc/en-us/requests/new?ticket_form_id=114093978532" target="_blank">Contact</a>
+					<a aria-expanded="false" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Ryan's Account <i class="fa fa-cog"></i> </a>
+					<ul class="dropdown-menu">
+						<li><a href="https://wrds-www.wharton.upenn.edu/users/your-account/">Your Account Info</a></li>
+						
+							<li><a href="https://wrds-www.wharton.upenn.edu/users/preferences/">Preferences</a></li>
+						
+						<li><a href="https://wrds-www.wharton.upenn.edu/users/running/">Running Queries</a></li>
+						<li><a href="https://wrds-www.wharton.upenn.edu/users/saved/">Saved Queries &amp; Codes</a></li>
+						<li><a href="https://wrds-www.wharton.upenn.edu/users/products/">Products</a></li>
+						
+							<li><a href="https://wrds-www.wharton.upenn.edu/users/password-change/">Change Password</a></li>
+							<li><a href="https://wrds-www.wharton.upenn.edu/users/account-extension/request/">Expiration Extension</a></li>
+							<li><a href="https://wrds-www.wharton.upenn.edu/users/account-transfer/">Change Institution</a></li>
+						
+						<li><a href="https://wrds-www.wharton.upenn.edu/users/tou/">Terms of Use</a></li>
+					</ul>
+					<a aria-expanded="false" href="https://wrds-www.wharton.upenn.edu/logout/" class="btn btn-primary"> Logout <i class="fa fa-sign-out"></i></a>
+				</div>
+			
+			</li>
+		</ul>
+</div>
+
+
+        
+            
+
+
+
+<div class="main-search">
+    <div class="container">
+        <!-- TODO Fix nav bar search -->
+        <form method="post" id="search" action="https://wrds-www.wharton.upenn.edu/search/">
+            <input type="hidden" name="csrfmiddlewaretoken" value="etSSTGFDxy9CJTbv8FWVgFEDFW3y3NORQy0EoUtC8BCUvQwd5b0UZk7Z11NQlhvh">
+            
+            <div class="d-sm-block d-md-none">
+                <input class="w-100 main-srch" type="text" id="searchbox" name="queryTerms" placeholder="Search WRDS">
+                <button type="submit" class="btn btn-info w-100">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="d-sm-none d-md-block">
+                <input style="height: 30px" type="text" id="searchbox" name="queryTerms" placeholder="Search WRDS" class="main-srch">
+                <button type="submit" class="btn btn-info">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+        
+
+        <div class="utility-wrap">
+            <div class="redbar"></div>
+        </div>
+
+        
+        <div role="tabpanel" class="main-panel">
+            <div class="main-links ">
+                <div class="container">
+
+
+                    <ul class="nav nav-tabs justify-content-end mt-2" id="navlinks">
+                        
+                            
+                                      <li class="nav-item"><a aria-controls="##get-data-nav" role="tab" data-toggle="tab" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#get-data-nav" class="nav-link"><i class="fa fa-bar-chart"></i> Get Data
+                                     <i class="fa fa-caret-down"></i>
+                                  </a></li>
+                            
+                        
+                            
+                                      <li class="nav-item"><a aria-controls="##analytics-nav" role="tab" data-toggle="tab" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#analytics-nav" class="nav-link"><i class="fa fa-area-chart"></i> Analytics
+                                     <i class="fa fa-caret-down"></i>
+                                  </a></li>
+                            
+                        
+                            
+                                      <li class="nav-item"><a aria-controls="##classroom-nav" role="tab" data-toggle="tab" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#classroom-nav" class="nav-link"><i class="fa fa-graduation-cap"></i> Classroom
+                                     <i class="fa fa-caret-down"></i>
+                                  </a></li>
+                            
+                        
+                            
+                                      <li class="nav-item"><a aria-controls="##research-nav" role="tab" data-toggle="tab" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#research-nav" class="nav-link"><i class="fa fa-laptop"></i> Research
+                                     <i class="fa fa-caret-down"></i>
+                                  </a></li>
+                            
+                        
+                            
+                                      <li class="nav-item"><a aria-controls="##support-nav" role="tab" data-toggle="tab" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#support-nav" class="nav-link"><i class="fa fa-life-ring"></i> Support
+                                     <i class="fa fa-caret-down"></i>
+                                  </a></li>
+                            
+                        
+                    </ul>
+
+                </div>
+                
+                <div class="nav-content justify-content-center">
+                    <div class="tab-content">
+                        
+                            
+                                <div class="tab-pane nav-pane fade" id="get-data-nav" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+
+
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<p style="font-size: 16px; padding: 10px 0; line-height: 23px; margin: 0;">Vendors</p>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/" title="The Center for Research in Security Prices, LLC (CRSP) maintains the most comprehensive collection of security price, return, and volume data for the NYSE, AMEX and NASDAQ stock markets. Additional CRSP files provide stock indices, beta-based and cap-based portfolios, treasury bond and risk-free rates, mutual funds, and real estate data.">CRSP</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/" title="S&amp;P Global Market Intelligence Data Through Wharton Research Data Services">Compustat - Capital IQ</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/ibes-thomson-reuters/" title="I/B/E/S International Inc. created their Academic Research Program over 30 years ago to provide both summary and individual analyst forecasts of company earnings, cash flows, and other important financial items, as well as buy-sell-hold recommendations. In 2000, I/B/E/S was integrated with Thomson Reuters / First Call, and in 2012 First Call was discontinued.">IBES</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/nyse-trade-and-quote/" title="NYSE Trade and Quote (TAQ) database contains intraday transactions data (trades and quotes) for all securities listed on the New York Stock Exchange (NYSE) and American Stock Exchange (AMEX), as well as Nasdaq National Market System (NMS) and SmallCap issues.">TAQ</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/wrds-sec-analytics-suite/" title="WRDS SEC Analytics Suite">WRDS SEC Analytics Suite</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">CONCEPTS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Stock Prices</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Company Financials</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Earnings Forecasts &amp; Ratings</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Corporate Governance &amp; Ownership</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Economics Data</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/browse-data-concept/">Marketing Data</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/">COMPANIES / VARIABLES</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-web.wharton.upenn.edu/wrds/code_search/">Find Companies</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/search-variables/">Find Variables</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/" title="WRDS Data is easily accessible in your favorite programming language. Find out how to access WRDS through SAS, Python, R, MATLAB, and Stata. The connection methods available are listed under each language.">PROGRAMS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/data/sas-studio-wrds/" title="SAS Studio is a web application that lets you access SAS through your browser.">SAS Studio</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/r-from-the-web/" title="Learn how to access WRDS data from a web browser through RStudio Server">R Studio</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/jupyterhub-wrds/" title="Learn how to access WRDS data from JupyterHub with Python from the WRDS website">JupyterHub</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/external-data-sources/" title="A curated and inexhaustive list of external data outside of WRDS.  
+WRDS does not support data from any of these sources, but offers this list as a helpful resource for researchers.">External Data Sources</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/external-data-sources/political/" title="External data related to political outcomes, financing, and systems of government">Political</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/external-data-sources/regulatory/" title="External data related to the regulation and compliance of miscellaneous industries">Regulatory</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/get-data/external-data-sources/healthcare/" title="External data related to health insurance, healthcare outcomes and operations, and the healthcare industry">Healthcare</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/users/your-account/">QUERIES</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/users/running/">Currently Running Queries</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-web.wharton.upenn.edu/wrds/mywrds/my_recent_queries.cfm">Recent Queries</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-web.wharton.upenn.edu/wrds/mywrds/savedqueries.cfm">Saved Queries</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+
+                                    </div>
+                                    
+
+                                    
+                                        
+                                            <div class="col-md-12 direct-link">
+                                                <a href="https://wrds-www.wharton.upenn.edu/pages/get-data/" class="btn btn-primary"><i class="fa fa-bar-chart"></i>
+                                                    
+                                                        All Data
+                                                    <i class="fa fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="tab-pane nav-pane fade" id="analytics-nav" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+
+
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/?t=event-study">Event Study</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/us-daily-event-study-events-capital-iq/">U.S. Daily Event Study</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/intl-event-study-comp-global-events-ciq/">International Event Study (Compustat Global)</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/intl-event-study-global-ins-upload-your-events/">International Event Study (Global Insight)</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/?t=other-research-tools">Other Research Tools</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/beta-suite-wrds/">Beta Suite by WRDS</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/cusip-converter/">CUSIP Converter</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/wrds-research-backtester/">WRDS Backtester</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/?t=sec">SEC</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/sec-analytics-suite-wrds/wrds-insiders/">WRDS Insider</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/sec-filings-search/">SEC Filings Search</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/readability-and-sentiment-analysis/">Readability and Sentiment Analysis</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/analytics/?t=financial-ratios">Financial Ratios</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/financial-ratios-firm-level/">Firm Level</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/financial-ratio-industry-level/">Industry Level</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+
+                                    </div>
+                                    
+
+                                    
+                                        
+                                            <div class="col-md-12 direct-link">
+                                                <a href="https://wrds-www.wharton.upenn.edu/pages/analytics/" class="btn btn-primary"><i class="fa fa-area-chart"></i>
+                                                    
+                                                        Analytics
+                                                    <i class="fa fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="tab-pane nav-pane fade" id="classroom-nav" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+
+
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=introduction-to-wrds">INTRO TO WRDS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/getting-started/">Getting Started</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/what-data-wrds/">What Data is in WRDS?</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/finding-data-you-want/">Finding the Data</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/understanding-identifiers/">Understanding Identifiers</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/using-sas-studio/">Using SAS Studio</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=accounting">ACCOUNTING</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/gaap-financial-statements/">Intro to Financial Statements</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/income-statement/">Income Statement</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/balance-sheet/">Balance Sheet</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/cash-flow-statement/">Statement of Cash Flows</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/linking-financial-statements/">Linking Financial Statements</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=investments">INVESTMENTS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/beta-visualization/">Beta Visualization</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/market-and-firm-specific-risk/">Market and Firm-Specific Risk</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/porfolio-risk-over-time/">Portfolio Risk Over Time</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/mechanics-diversification/">Mechanics of Diversification</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/grid-items/portfolio-diversification/">Portfolio Diversification</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/syllabus/">SYLLABI</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/syllabi/fundamentals-accounting-syllabus/">Accounting</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/syllabi/fundamentals-investing-syllabus/">Finance</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/syllabi/fundamentals-macroeconomics-syllabus/">Macroeconomics</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/syllabi/text-analytics/">Text Analytics</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/">OTHER TOPICS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=macroeconomics">Macroeconomics</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=sec">SEC</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/classroom/?t=text-analytics">Text Analytics</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+
+                                    </div>
+                                    
+
+                                    
+                                        
+                                            <div class="col-md-12 direct-link">
+                                                <a href="https://wrds-www.wharton.upenn.edu/pages/classroom/" class="btn btn-primary"><i class="fa fa-graduation-cap"></i>
+                                                    
+                                                        Full Catalog
+                                                    <i class="fa fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="tab-pane nav-pane fade" id="research-nav" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+
+
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/" title="To improve efficiency and quality of empirical research, WRDS replicated widely-cited papers that represent various areas of research. As transparent and ready-to-use algorithms, such applications cover a variety of topics from portfolio construction, earnings surprise calculation, institutional ownership ratios to deriving NBBO, signing trades, and option pricing. These sample source codes offer users the flexibility to customize them to address their specific research needs.">APPLICATIONS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/linking-databases/linking-ibes-and-crsp-data/" title="IBES data with broker estimates of company earnings and CRSP data with the corresponding stock prices are often combined by linking common identifiers--particularly CUSIPS--in both datasets.This document explains a &quot;Linking Table&quot; approach for merging IBES and CRSP data, and provides SAS code.">Linking IBES and CRSP</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/linking-databases/linking-crsp-and-compustat/" title="This paper provides a guide to merging data from the CRSP and Compustat datasets at the securities level.">CRSP/Compustat Merged</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/microstructure-research/using-taq-data-efficiently/" title="This research application covers important information regarding how to use the Trade and Quote (TAQ) database including the TAQ daily file structure, efficient programming techniques, and available WRDS resources.">Using TAQ Efficiently</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/sample-programs/industry-ratios-sample-programs/industry-ratios/" title="This research application provides a tool to help researchers calculate industry ratios for a set of sample firms that the researcher provides to the application. The program calculates and saves to a SAS data set 13 of the most commonly-used financial ratios:">Industry Ratios</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/programming-examples-and-other-topics/guide-option-pricing-models-black-scholes-and-merton-option-pricing-model-european-options/" title="Describes Black- Scholes, Merton, and binomial models to price European and American options, with or without dividends, and presents relevant SAS functions and codes.">Option Pricing Models</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/" title="Research Macros by WRDS are standardized SAS routines frequently used by researchers in Finance and Accounting to perform common empirical procedures that are likely to be a part of any research project.">MACROS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/#analytical-macros">Analytical</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/#database-specific-macros">Database-Specific</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/#linking-macros">Linking Identifiers</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/#utilities">Utilities</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-macros-wrds/#wrds-sec-platform-macros">WRDS SEC Platform</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/programming-guides/" title="Guides contain background information, how to address data and research issues, sample code and more. Each guide contains information applicable to a specific topic.">GUIDES</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/programming-examples-and-other-topics/guide-mutual-fund-holdings-reporting/" title="Discusses how to verify the TFN S12 (Mutual fund) holdings using documents in the SEC&#39;s EDGAR system.">Mutual Fund Holdings</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/research-wrds/research-guides/guide-adrs-and-research/" title="An American Depositary Receipt (ADR) is a negotiable certificate denominated in US dollars that represents a specific number of shares of a foreign company. This introduction to ADR research includes data sources, how to extract ADR data using WRDS, and sample SAS code.">ADRs</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/applications/programming-examples-and-other-topics/guide-closed-end-funds/" title="Reviews several research areas related to closed-end funds. Data sources for closed-end funds are described and issues related to using CRSP and COMPUSTAT databases for closed-end fund research are discussed.">Closed-End Funds</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+</div>
+
+                                    </div>
+                                    
+
+                                    
+                                        
+                                            <div class="col-md-12 direct-link">
+                                                <a href="https://wrds-www.wharton.upenn.edu/pages/support/wrds-research/" class="btn btn-primary"><i class="fa fa-laptop"></i>
+                                                    
+                                                        All Research
+                                                    <i class="fa fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                            
+                                <div class="tab-pane nav-pane fade" id="support-nav" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+
+
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/" title="Welcome to WRDS! This section helps you to familiarize yourself with the services WRDS offers, and how to access the many datasets available at WRDS.">GETTING STARTED</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/3-ways-use-wrds/" title="Flexible Delivery Options">3 Ways to use WRDS</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/wrds-account-types/" title="WRDS Account Types">Account Types</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/library-lab-access/" title="IP-Authenticated Access at Institution-Controlled Computers">Library &amp; Lab Access</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/" title="WRDS Data is easily accessible in your favorite programming language. Find out how to access WRDS through SAS, Python, R, MATLAB, and Stata. The connection methods available are listed under each language.">PROGRAMMING AT WRDS</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-sas/" title="How to access WRDS data through SAS: from the web, from your computer, or on the WRDS Cloud">SAS</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-python/" title="How to access WRDS data through Python: from your computer or on the WRDS Cloud">Python</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/" title="How to access WRDS data through R: from your computer or on the WRDS Cloud">R</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-matlab/" title="How to access WRDS data through MATLAB: from your computer">MATLAB</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-stata/" title="How to access WRDS data through Stata: from your computer or on the WRDS Cloud">Stata</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/the-wrds-cloud/" title="The WRDS Cloud is our high-performance computing cluster, available to all WRDS subscribers">The WRDS Cloud</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/data/" title="WRDS data is compiled from independent sources that specialize in specific historical data.">USING DATA</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/">Dataset List</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/data-dictionary/data-calendar/">Data Update Calendar</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/manuals-and-overviews/" title="Manuals, Overviews, and Support Content related to Vendors and Products on the WRDS Platform.">Vendor Manuals and Overviews</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+                                        
+
+
+
+
+
+
+
+<div class="col-md-6 col-lg-3">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/" title="Welcome to the WRDS Support Section. Learn about the available data sets at WRDS, how to access them remotely or on our WRDS Cloud high performance computing cluster, and how to use our data in your research.">INFO</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds.zendesk.com/hc/en-us/requests/new?ticket_form_id=114093978532">Contact WRDS Support</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/">Vendor Support &amp; Contact</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+
+                                    </div>
+                                    
+
+                                    
+                                        
+                                            <div class="col-md-12 direct-link">
+                                                <a href="https://wrds-www.wharton.upenn.edu/pages/support/" class="btn btn-primary"><i class="fa fa-life-ring"></i>
+                                                    
+                                                        All Support
+                                                    <i class="fa fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        
+                                    
+                                </div>
+                            
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</nav>
+
+
+
+	<div class="main-breadcrumb">
+		<div class="container">
+			<div>
+				<nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="https://wrds-www.wharton.upenn.edu/" class="breadcrumb-item bc-home"><i class="fa fa-home"></i> <span>Home</span></a></li>
+					
+  
+    <li class="breadcrumb-item "><a class="breadcrumb-item" href="https://wrds-www.wharton.upenn.edu/pages/support/">Support</a></li>
+  
+    <li class="breadcrumb-item "><a class="breadcrumb-item" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/">Knowledgebase</a></li>
+  
+    <li class="breadcrumb-item "><a class="breadcrumb-item" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/">OptionMetrics</a></li>
+  
+    <li class="breadcrumb-item  active">OptionMetrics: Trading &amp; Prices</li>
+  
+
+
+
+					</ol>
+				</nav>
+			</div>
+			<div class="bc-right">
+				
+				
+			</div>
+		</div>
+	</div>
+
+
+
+<main id="content" role="main" class="">
+	<div id="main-body" class="main-section">
+		<div class="container page-wrapper-container ">
+
+		
+		
+
+
+
+		
+	
+
+
+
+<div class="row">
+	
+		<div class="col-12">
+			<a name="top"></a>
+			<h1 class="page-header">OptionMetrics: Trading &amp; Prices</h1>
+		</div>
+	
+
+	<div class="col-12 col-lg-8">
+		<section>
+			
+				<p class="lead">OptionMetrics: Trading &amp; Prices</p>
+			
+
+			
+				<!-- No extra_body_top content -->
+			
+
+			
+
+				
+					
+						
+						
+						
+
+<section class="m-top10 m-bottom30">
+	<header>
+		<a name="detail"></a>
+		<h2>Detail</h2>
+
+	</header>
+	
+
+
+  <p>According to OptionMetrics, all greeks are calculated using the spot price, which is the close price you find in the Security Prices table. And you can't find forward price anywhere using OptionMetrics data.&nbsp;</p><p>Equity options actually trade in the synchronized fashion as the stocks exchanges and the hour is 8:30 am to 3:00 pm central time. See CBOE site for<a href="http://www.cboe.com/Products/EquityOptionSpecs.aspx"> more info</a>.&nbsp;</p><p>Having said that, please be aware that there are non-synchronization issue with the way OptionMetrics collects option prices. Here's how OptionMetrics explains their procedure:&nbsp;</p><p>" Option prices used in implied volatility calculations up to March 4, 2008 are end of day prices (i.e. 4:15 PM EST). Starting from March 5, 2008 we have been capturing best bid and best offer as close to 4 oclock as possible in an attempt to better synchronize the option price with the underlying close. Currently the option prices are captured at 15:59 EST. The underlying price used is the official (composite) close which can be found in Security_Price file. "</p>
+
+
+
+	
+		<p align="right"><a class="btn btn-primary btn-sm" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#detail">Top of Section</a></p>
+	
+</section>
+
+
+					
+				
+
+			
+
+			
+				<!-- No extra_body_bottom content -->
+			
+
+			<p align="right"><a class="btn btn-primary btn-sm" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#top">Top</a></p>
+		</section>
+	</div>
+
+	<div class="col-12 col-lg-4">
+
+		
+			<!-- No extra_sidebar_top content -->
+		
+
+		
+
+			
+				
+					<h3>Table of Contents</h3>
+					
+  <ul class="cta-links">
+    
+      <li><a class="default-fa" href="https://wrds-www.wharton.upenn.edu/pages/support/support-articles/optionmetrics/optionmetrics-trading-prices/#detail">Detail</a></li>
+    
+  </ul>
+
+
+
+				
+			
+
+			
+				
+			
+
+		
+
+		
+			<!-- No extra_sidebar_bottom content -->
+		
+
+	</div>
+</div>
+
+
+
+		</div><!-- ends the main-section -->
+	</div><!-- ends the main container -->
+</main><!--/ end main content -->
+
+
+
+    <div class="mt-5">
+        
+
+
+
+
+
+
+<footer class="wrds-footer d-print-none">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-lg-4 mb-3">
+				<a href="http://www.wharton.upenn.edu/" title="The Wharton School" target="_blank">
+					<img src="./OptionMetrics_ Trading &amp; Prices_files/wharton_white.svg" alt="The Wharton School Logo" class="wrds-footer-logo ">
+				</a>
+				<a class="wrds-footer-text" href="https://wrds-www.wharton.upenn.edu/">Wharton Research Data Services</a>
+               <div class="border-white mt-3 border-top d-md-block d-lg-none"></div>
+			</div>
+			<div class="col-12 col-lg-8">
+				<div class="row">
+					
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-6 col-12">
+	
+		<ul class="no-bullet-list">
+			
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/" title="Wharton Research Data Services (WRDS) provides the leading business intelligence, data analytics, and research platform to global institutions—enabling comprehensive thought leadership, historical analysis, and insight into the latest innovations in academic research.">About WRDS</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/wrds-faqs/" title="Answers to some frequently asked questions">WRDS FAQs</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/news/">WRDS News</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/wrds-staff/">Our Team</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+					
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-6 col-12">
+	
+		<ul class="no-bullet-list">
+			
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/3-ways-use-wrds/" title="Flexible Delivery Options">3 Ways to use WRDS</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/wrds-account-types/" title="WRDS Account Types">WRDS Account Types</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/users/tou/">Terms of Use</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+					
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-6 col-12">
+	
+		<ul class="no-bullet-list">
+			
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/users/preferences/">Account Preferences</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds.zendesk.com/hc/en-us/requests/new?ticket_form_id=114093978532">Info / Support Request</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/wrds-privacy-policy/wrds-privacy-and-gdpr-policy/" title="Your privacy and the protection of your data are important to us.  This page documents the data we collect from you and what you can do to remove your data if you choose to do so.">Privacy Policy</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+					
+
+
+
+
+
+
+
+<div class="col-md-3 col-sm-6 col-12">
+	
+		<ul class="no-bullet-list">
+			
+				
+					
+						
+	
+		<li class="sub-title">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/demo-wrds/">Sample Data</a>
+		
+	
+		</li>
+	
+
+					
+				
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/events/">Conference Calendar</a>
+		
+	
+		</li>
+	
+
+				
+					
+	
+		<li class="">
+	
+		
+			<a class="" href="https://wrds-www.wharton.upenn.edu/pages/about/enabling-impactful-research/" title="Impact is the future currency of research — Elevate the visibility, impact, and credibility of your research institution.">Impactful Research</a>
+		
+	
+		</li>
+	
+
+				
+			
+		</ul>
+	
+</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<small class="wrds-footer-copyright">Unless otherwise noted, all material is © 1993-2021, The Wharton School, University of Pennsylvania. All rights reserved.</small>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+
+
+
+	
+	
+
+
+	<script>
+	var wrds_cf_url = JSON.parse('{"WRDS_CF_URL":"https://wrds-web.wharton.upenn.edu/wrds/"}');
+	</script>
+
+	<script src="./OptionMetrics_ Trading &amp; Prices_files/top-nav.js.download"></script>
+	<script src="./OptionMetrics_ Trading &amp; Prices_files/jquery.cookie.js.download"></script>
+
+
+
+    <script src="./OptionMetrics_ Trading &amp; Prices_files/katex.min.js.download" integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" crossorigin="anonymous"></script>
+    <script src="./OptionMetrics_ Trading &amp; Prices_files/katex_frontend_renderer.js.download"></script>
+
+<!-- Django - host: wrds-pub2-h.wharton.private, port: 443, time: 2021-03-27EDT 20:23:05 -0400, remote_addr: 85.195.250.12 -->
+
+<script>
+    
+
+    function offsetBottom(el, i) {
+        i = i || 0;
+        return $(el)[i].getBoundingClientRect().bottom
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        var footerBottom = offsetBottom('.wrds-footer');
+        var element = document.getElementById('main-body');
+        var footerDiff = vh - footerBottom;
+        if (footerDiff > 0) {
+            
+            footerDiff = footerDiff + 50;
+            element.style.marginBottom = footerDiff + "px";
+        }
+    }, false);
+</script>
+
+<div aria-live="polite" id="bit-notification-bar" style="height: 42px; width: 100%; top: 0px; left: 0px; padding: 0px; position: fixed; z-index: 2147483647; visibility: visible;"><iframe id="bit-notification-bar-iframe" style="height: 42px; width: 100%; border: 0px; min-height: initial;" src="./OptionMetrics_ Trading &amp; Prices_files/saved_resource.html"></iframe></div></body></html>

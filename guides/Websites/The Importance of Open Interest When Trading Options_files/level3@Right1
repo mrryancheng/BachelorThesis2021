@@ -1,0 +1,47 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+document.write ('<NOLAYER>\n');
+document.write ('<IFRAME SRC="https://web.archive.org/web/20080806055609/http://ad.n2434.doubleclick.net/adi/N2434.TradingMarkets/B2528560.7;sz=160x600;ord=[timestamp]?" WIDTH=160 HEIGHT=600 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=');
+document.write ("'");
+document.write ('#000000');
+document.write ("'");
+document.write ('><A HREF="https://web.archive.org/web/20080806055609/http://ad.n2434.doubleclick.net/jump/N2434.TradingMarkets/B2528560.7;abr=!ie4;abr=!ie5;sz=160x600;ord=[timestamp]?">\n');
+document.write ('<IMG SRC="https://web.archive.org/web/20080806055609/http://ad.n2434.doubleclick.net/ad/N2434.TradingMarkets/B2528560.7;abr=!ie4;abr=!ie5;sz=160x600;ord=[timestamp]?" BORDER=0 WIDTH=160 HEIGHT=600 ALT="Click Here"></A>\n');
+document.write ('</IFRAME>\n');
+document.write ('</NOLAYER>\n');
+document.write ('<ILAYER SRC="https://web.archive.org/web/20080806055609/http://ad.n2434.doubleclick.net/adl/N2434.TradingMarkets/B2528560.7;sz=160x600;ord=[timestamp]?" WIDTH=160 HEIGHT=600>\n');
+document.write ('</ILAYER>\n');
+
+
+}
+/*
+     FILE ARCHIVED ON 05:56:09 Aug 06, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:14 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 0.571
+  PetaboxLoader3.datanode: 162.284 (4)
+  CDXLines.iter: 39.68 (3)
+  exclusion.robots.policy: 0.129
+  esindex: 0.009
+  LoadShardBlock: 149.476 (3)
+  load_resource: 124.297
+  captures_list: 193.209
+  exclusion.robots: 0.138
+  PetaboxLoader3.resolve: 88.105
+*/

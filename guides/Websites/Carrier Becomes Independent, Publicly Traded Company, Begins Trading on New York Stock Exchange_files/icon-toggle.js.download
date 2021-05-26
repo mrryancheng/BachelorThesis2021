@@ -1,0 +1,2 @@
+define(['jquery'],function($){var iconToggle=function(type,iconset,closed,open,id){var $t=(id)?$('.icon-toggle[data-icon-toggle="'+id+'"]'):$('.icon-toggle');$.each($t,function(i){var self=$(this),$parent=$($t.parent()[i]),targetId=self.attr('id'),$icon=(type==='collapse'?$parent.find('a[href=#'+targetId+']').find('i'):$t.find('i'));$parent.on('show.bs.'+type+'',function(){$icon.removeClass(closed).addClass(open);});$parent.on('hide.bs.'+type+'',function(){$icon.removeClass(open).addClass(closed);});})}
+return iconToggle;});

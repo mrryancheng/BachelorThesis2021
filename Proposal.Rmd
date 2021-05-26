@@ -1,0 +1,123 @@
+---
+title: "Bachelor Thesis Proposal"
+author: "Ryan Cheng"
+date: "03/05/2021"
+output: pdf_document
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(cowplot)
+library(htmltab)
+library(bizdays)
+library(timeDate)
+library(lubridate)
+library(beepr)
+
+load("./data/earnings_df.RData")
+load("./data/options_df_orig.RData")
+load("./data/earnings_options_df.RData")
+
+test = bind_cols(earnings_df, earnings_options_df)
+
+test2 = test %>% 
+  rowwise() %>%
+  transmute(returns = abs(returns),
+            abs_returns = abs(close_weekday_before-close_weekday_after),
+            pct_abs_returns = abs((close_weekday_before-close_weekday_after)/close_weekday_before),
+            strangle = (mean(c(b_call_bid, b_call_offer)) + mean(c(b_put_bid, b_put_offer)))/close_weekday_before,
+            abs_b_strangle = mean(c(b_call_bid, b_call_offer)) + mean(c(b_put_bid, b_put_offer)),
+            abs_a_strangle = mean(c(a_call_bid, a_call_offer)) + mean(c(a_put_bid, a_put_offer)),
+            b_iv = mean(c(b_call_iv, b_put_iv)),
+            a_iv = mean(c(a_call_iv, a_put_iv)),
+            total_volume = sum(c(b_call_volume, b_put_volume, a_call_volume, a_put_volume)),
+            total_opint = sum(c(b_call_opint, b_put_opint, a_call_opint, a_put_opint))
+            ) %>%
+  mutate(profit = abs_b_strangle-abs_a_strangle,
+         iv_change = a_iv - b_iv) %>%
+  mutate(relative_profit = profit/abs_b_strangle) %>%
+  arrange(total_volume) %>%
+  filter(total_volume > 5000)
+
+test2$cumsum_profit = cumsum(test2$relative_profit)
+```
+
+## Proposed Title
+
+On the returns of option strangles around earnings events
+
+
+
+## Idea
+
+The drop in options implied volatility after an earnings event is sometimes presented as an opportunity to profit independent of the direction of the stock's eventual movement, through the opening of a short delta-neutral options position such as a strangle or a straddle before an earnings event, and the closing of the position after the event.
+
+In my thesis, I will attempt to provide an argument for/against such a strategy through an empirical analysis of past earnings events, specifically for the current components of the S&P 500 index, over the 20 years from 2000 to 2020.
+
+
+
+## Methodology
+
+I first obtained a list of earnings dates from Yahoo Finance.
+
+Then, using the OptionMetrics database on WRDS, I calculated the price of an options strangle using the out of the money (OTM) call and put with strike prices closest to the closing price of the stock on the business day before the earnings announcement, and with the earliest expiration.
+
+I then calculated the price of that same strangle at the close of the business day after the earnings announcement.
+
+Assuming a strategy where one opens a short strangle position before earnings and closes the position after earnings, I subtracted the strangle's after-earnings price from the before-earnings price.
+
+This leads to a profit distribution as follows:
+
+```{r test2, echo=FALSE, warning = FALSE, fig.height = 2}
+ggplot(data = test2) +
+  geom_histogram(aes(x = profit), binwidth = 0.05, fill = "black") +
+  xlim(-6,6) +
+  xlab("Profit per share") +
+  ylab("Count")
+```
+
+As can be seen, the distribution of profits per share is skewed positively.
+
+## Further analysis
+* Effect of liquidity (volume, open interest)
+* Kurtosis (fat tails destroying profit potential, as is always the risk when dealing with short option positions)
+
+
+## Limitations
+* Limited availability of options data, only daily closing prices available
+* S&P500 constituent changes
+
+## Possible conclusions
+* Statistically significant positive or negative return, with various caveats
+* Insignificant return, making case for market efficiency
+
+## Bibliography
+
+---
+nocite: | 
+  @Wang2018, @Tan2018, @Gao2018, @Chung2017
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

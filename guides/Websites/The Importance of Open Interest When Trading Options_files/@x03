@@ -1,0 +1,45 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+document.write ('<iframe src="https://web.archive.org/web/20090523231702/http://view.atdmt.com/AVE/iview/147864223/direct;wi.150;hi.40/012026741855?click=http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/2026741855/x03/Trademkt/InterbankFX05-0609-150x40/150x40InterbankFX05-0609-.html/7a2f48724e556f5967386341416c6836?" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" allowtransparency="true" width="150" height="40">\n');
+document.write ('<script language="JavaScript" type="text/javascript">\n');
+document.write ('document.write(');
+document.write ("'");
+document.write ('<a href="https://web.archive.org/web/20090523231702/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/2026741855/x03/Trademkt/InterbankFX05-0609-150x40/150x40InterbankFX05-0609-.html/7a2f48724e556f5967386341416c6836?http://clk.atdmt.com/AVE/go/147864223/direct;wi.150;hi.40/012026741855" target="_blank"><img src="https://web.archive.org/web/20090523231702/http://view.atdmt.com/AVE/view/147864223/direct;wi.150;hi.40/012026741855"/></a>');
+document.write ("'");
+document.write (');\n');
+document.write ('</script><noscript><a href="https://web.archive.org/web/20090523231702/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/2026741855/x03/Trademkt/InterbankFX05-0609-150x40/150x40InterbankFX05-0609-.html/7a2f48724e556f5967386341416c6836?http://clk.atdmt.com/AVE/go/147864223/direct;wi.150;hi.40/012026741855" target="_blank"><img border="0" src="https://web.archive.org/web/20090523231702/http://view.atdmt.com/AVE/view/147864223/direct;wi.150;hi.40/012026741855" /></a></noscript></iframe>\n');
+document.write ('<!-- _RM_EMPTY_ is to be sent from third party server -->\n');
+
+
+}
+/*
+     FILE ARCHIVED ON 23:17:02 May 23, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:14 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 201.92
+  exclusion.robots: 0.112
+  exclusion.robots.policy: 0.103
+  RedisCDXSource: 9.248
+  esindex: 0.009
+  LoadShardBlock: 167.302 (3)
+  PetaboxLoader3.datanode: 185.368 (4)
+  CDXLines.iter: 21.526 (3)
+  load_resource: 210.987
+  PetaboxLoader3.resolve: 164.427
+*/

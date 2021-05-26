@@ -1,0 +1,1 @@
+define(['jquery'],function($){$('.btn-print').on('click',function(){window.print();});$('.btn-email1').on('click',function(){var subject=$(this).data('subject');window.location='mailto:?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(window.location);return false;});});

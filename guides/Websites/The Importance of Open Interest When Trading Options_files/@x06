@@ -1,0 +1,53 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+document.write ('<IFRAME SRC="https://web.archive.org/web/20090523231838/http://ad.doubleclick.net/adi/N4897.TradingMarkets/B3548246.6;sz=150x40;click0=http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/624979313/x06/Trademkt/Zecco0509-150x40stocks/150x40stocksZecco0409-.html/7a2f48724e556f5967386341416c6836?;ord=624979313?" WIDTH=150 HEIGHT=40 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=');
+document.write ("'");
+document.write ('#000000');
+document.write ("'");
+document.write ('>\n');
+document.write ('<SCRIPT language=');
+document.write ("'");
+document.write ('JavaScript1.1');
+document.write ("'");
+document.write (' SRC="https://web.archive.org/web/20090523231838/http://ad.doubleclick.net/adj/N4897.TradingMarkets/B3548246.6;abr=!ie;sz=150x40;click0=http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/624979313/x06/Trademkt/Zecco0509-150x40stocks/150x40stocksZecco0409-.html/7a2f48724e556f5967386341416c6836?http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/624979313/x06/Trademkt/Zecco0509-150x40stocks/150x40stocksZecco0409-.html/7a2f48724e556f5967386341416c6836?;ord=624979313?">\n');
+document.write ('</SCRIPT>\n');
+document.write ('<NOSCRIPT>\n');
+document.write ('<A HREF="https://web.archive.org/web/20090523231838/http://oascentral.tradingmarkets.com/RealMedia/ads/click_lx.ads/www.tradingmarkets.com/L22/624979313/x06/Trademkt/Zecco0509-150x40stocks/150x40stocksZecco0409-.html/7a2f48724e556f5967386341416c6836?http://ad.doubleclick.net/jump/N4897.TradingMarkets/B3548246.6;abr=!ie4;abr=!ie5;sz=150x40;ord=624979313?">\n');
+document.write ('<IMG SRC="https://web.archive.org/web/20090523231838/http://ad.doubleclick.net/ad/N4897.TradingMarkets/B3548246.6;abr=!ie4;abr=!ie5;sz=150x40;ord=624979313?" BORDER=0 WIDTH=150 HEIGHT=40 ALT="Click Here"></A>\n');
+document.write ('</NOSCRIPT>\n');
+document.write ('</IFRAME>\n');
+document.write ('<!-- _RM_EMPTY_ is to be sent from third party server -->\n');
+
+
+}
+/*
+     FILE ARCHIVED ON 23:18:38 May 23, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:07:15 Mar 27, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.015
+  exclusion.robots: 0.24
+  PetaboxLoader3.resolve: 40.571
+  captures_list: 81.708
+  RedisCDXSource: 0.898
+  PetaboxLoader3.datanode: 60.059 (4)
+  LoadShardBlock: 35.215 (3)
+  load_resource: 69.092
+  CDXLines.iter: 24.958 (3)
+  exclusion.robots.policy: 0.225
+*/
