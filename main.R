@@ -1,6 +1,7 @@
 rm(list=ls())
 
 
+
 # Load Libraries ----------------------------------------------------------
 
 library(tidyverse)
@@ -34,9 +35,10 @@ wrds <- dbConnect(Postgres(),
                   user='ryanc196')
 
 
+
 # Load earnings dates -----------------------------------------------------
 
-earnings_df_orig = read_csv("./data/earnings_sp500_20y.csv", col_names = TRUE) 
+# earnings_df_orig = read_csv("./data/earnings_sp500_20y.csv", col_names = TRUE) 
 # DD only available 2021 onwards
 
 earnings_df = earnings_df_orig %>% 
@@ -375,10 +377,8 @@ beep()
 
 # Combine Earnings Date DF and Earnings Options DF ------------------------
 
-# load("./data/options_df_orig.RData")
-
-load("./data/earnings_df.RData")
-load("./data/earnings_options_df.RData")
+# load("./data/earnings_df.RData")
+# load("./data/earnings_options_df.RData")
 
 earnings_combined_df = bind_cols(earnings_df, earnings_options_df) %>% 
   rowwise() %>%
@@ -447,6 +447,8 @@ ggplot(data = earnings_final_df %>%
   ylab("Number of Trades") +
   theme(axis.title.x=element_text(hjust = 0.43))
 
+
+
 # sp500_year_added
 ggplot(data = list_spx_df %>% 
          transmute(year = year(`Date first added`)) %>% 
@@ -457,6 +459,8 @@ ggplot(data = list_spx_df %>%
   ylab("Number of Companies") +
   theme(axis.title.x=element_text(hjust = 0.15))
 
+
+
 # iv_crush
 ggplot(data = earnings_final_df) +
   geom_histogram(aes(x = iv_change), binwidth = 0.03) +
@@ -465,8 +469,12 @@ ggplot(data = earnings_final_df) +
   ylab("Frequency") +
   theme(axis.title.x=element_text(hjust = 0.40))
 
+
+
 # iv_crush table
 stargazer(as.data.frame(select(earnings_final_df,iv_change)))
+
+
 
 # abs_strangle_returns
 ggplot(data = earnings_final_df) +
@@ -476,12 +484,18 @@ ggplot(data = earnings_final_df) +
   ylab("Frequency") +
   theme(axis.title.x=element_text(hjust = 0.20))
 
+
+
 # abs_strangle_returns table
 stargazer(as.data.frame(select(earnings_final_df,abs_strangle_returns)))
+
+
 
 # abs_strangle_return positive returns
 sum(earnings_final_df$abs_strangle_returns>0)    #5070
 length(earnings_final_df$abs_strangle_returns>0) #7655
+
+
 
 # rel_strangle_returns
 ggplot(data = earnings_final_df) +
@@ -491,8 +505,12 @@ ggplot(data = earnings_final_df) +
   theme(axis.title.x=element_text(hjust = 0.20)) +
   scale_x_continuous(breaks = -6:2, limits = c(-6,2))
 
+
+
 # abs_strangle_returns table
 stargazer(as.data.frame(select(earnings_final_df,rel_strangle_returns)))
+
+
 
 # strangle_10k_portfolio
 earnings_timeseries = earnings_final_df %>% 
@@ -514,6 +532,8 @@ ggplot() +
   xlab("Date") +
   ylab("Portfolio Return (US$)")
 
+
+
 # spy_portfolio
 start_date <- '2000-01-01'
 end_date   <- '2020-12-31'
@@ -532,6 +552,8 @@ SPY_timeseries[1, 3] = 10000
 SPY_timeseries = SPY_timeseries %>%
   mutate(spy_10k_portfolio = cumprod(1 + spy_10k_portfolio)) %>%
   mutate(date = index(SPY_close))
+
+
 
 # strangle_spy_comparison
 ggplot() +
@@ -553,6 +575,8 @@ ggplot() +
   ) + 
   guides(color = guide_legend(reverse = TRUE))
 
+
+
 # Sharpe Ratio
 earnings_timeseries_xts = earnings_timeseries  %>%
   select(report_date, strangle_10k_change) %>% 
@@ -564,10 +588,6 @@ SharpeRatio(earnings_timeseries_xts,
 # Annualized StdDev Sharpe (Rf=0%, p=95%):            1.451383
 # Annualized VaR Sharpe (Rf=0%, p=95%):              14.523975
 # Annualized ES Sharpe (Rf=0%, p=95%):                4.828307
-
-
-
-# -------------------------------------------------------------------------
 
 SPY_timeseries_xts = SPY_timeseries  %>%
   select(date, spy_change) %>% 
@@ -582,14 +602,14 @@ SharpeRatio(SPY_timeseries_xts,
 
 
 
-# -------------------------------------------------------------------------
+# Drawdown
 
 table.Drawdowns(earnings_timeseries_xts) %>% stargazer(summary = NULL)
 chart.Drawdown(earnings_timeseries_xts)
 
 
 
-# -------------------------------------------------------------------------
+# Protfolio Beta
 
 merged_timeseries_xts = merge.xts(earnings_timeseries_xts, SPY_timeseries_xts)
 
