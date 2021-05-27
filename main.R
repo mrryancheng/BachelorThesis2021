@@ -609,7 +609,7 @@ chart.Drawdown(earnings_timeseries_xts)
 
 
 
-# Protfolio Beta
+# Portfolio Beta
 
 merged_timeseries_xts = merge.xts(earnings_timeseries_xts, SPY_timeseries_xts)
 
